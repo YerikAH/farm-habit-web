@@ -1,8 +1,11 @@
 import React from 'react'
+import Main from '../components/webpage/Main/Main'
 
 const WebPage = () => {
   return (
-    <div>WebPage</div>
+    <>
+      <Main/>
+    </>
   )
 }
 

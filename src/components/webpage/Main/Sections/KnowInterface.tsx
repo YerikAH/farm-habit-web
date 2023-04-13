@@ -1,4 +1,10 @@
 import * as style from '../../../../styles/webpage/main/sections/interface'
+import appFive from '../../../../assets/app_5.png'
+import appFour from '../../../../assets/app_4.png'
+import appThree from '../../../../assets/app_3.png'
+import appTwo from '../../../../assets/app_2.png'
+import appOne from '../../../../assets/app_1.png'
+
 
 const KnowInterface = () => {
   return (
@@ -11,6 +17,13 @@ const KnowInterface = () => {
         risus sit amet, ultricies pretium ante. Curabitur eu lacinia augue. Aenean id fringilla ex,
         ac aliquet ligula.
       </style.TextBodyOne>
+      <style.BoxImages>
+        <style.ImageResponsive src={appFive} alt='app preview'/>
+        <style.ImageResponsive src={appFour} alt='app preview'/>
+        <style.ImageResponsive src={appOne} alt='app preview' className='mobile'/>
+        <style.ImageResponsive src={appTwo} alt='app preview'/>
+        <style.ImageResponsive src={appThree} alt='app preview'/>
+      </style.BoxImages>
     </style.KnowInterfaceStyle>
   )
 }
