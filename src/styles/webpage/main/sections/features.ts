@@ -60,6 +60,6 @@ export const ButtonOptionTitle = styled.div`
   display: flex;
   gap:0.5rem;
 `
-export const ButtonTitlw = styled.p`
+export const ButtonTitle = styled.p`
   font: normal normal 1rem/1.5rem var(--font-primary);
 `
