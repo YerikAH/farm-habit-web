@@ -3,11 +3,11 @@
 @import url('./styles/reset.css');
 
 :root{
-  --black-100: #000;
-  --blue: #0a0;
-  --black-50: #0005;
-  --black-70: #0007;
-  --black-10: #0001;
+  --black-100: #363D4F;
+  --blue: #4B7EFF;
+  --black-50: #9A9EA7;
+  --black-70: #727784;
+
 
 
   /* app */
