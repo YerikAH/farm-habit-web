@@ -1,6 +1,12 @@
+import { MainStyles } from '../../../styles/webpage/main/main'
+import KnowInterface from './Sections/KnowInterface'
+
 const Main = () => {
   return (
-    <div>Main</div>
+    <MainStyles>
+      <KnowInterface/>
+      
+    </MainStyles>
   )
 }
 
