@@ -8,3 +8,9 @@ export interface FeaturesOptions {
   iconActive: JSX.Element
   active: boolean
 }
+
+export interface InterfaceDesktopImages {
+  id: number,
+  image: string
+  index:number
+}

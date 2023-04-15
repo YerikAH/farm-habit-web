@@ -1,4 +1,4 @@
-import { FeaturesOptions } from '../components/interface/interface'
+import { FeaturesOptions, InterfaceDesktopImages } from '../components/interface/interface'
 import { AllFeatures } from '../enum/enum'
 
 export function elementHtmlSelect(selectHTML: HTMLElement | null, idName: string): HTMLElement {
@@ -23,4 +23,14 @@ export function changeTrueValue(obj: FeaturesOptions[], myVar: AllFeatures): Fea
   obj[index] = { ...obj[index], active: true }
 
   return obj
+}
+export const order = (
+  arr: InterfaceDesktopImages[],
+  starti: number,
+  endi: number,
+): InterfaceDesktopImages[] => {
+  const result = [...arr]
+  const [removed] = result.splice(starti, 1)
+  result.splice(endi, 0, removed)
+  return result
 }

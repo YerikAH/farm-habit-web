@@ -28,17 +28,56 @@ export const BoxImages = styled.div`
   overflow: hidden;
   gap: 1rem;
   padding: 0 2rem;
+  transition: 0.3s;
   @media (min-width: 1024px) {
     gap: 2rem;
   }
-`
-export const ImageResponsive = styled.img`  
-  display: ${(props) => (props.className === 'mobile' ? 'block' : 'none')};
-  @media (min-width: 600px) {
+  & div {
+    display: flex;
+    width: 100%;
     justify-content: center;
-    display: ${(props) => (props.className === 'mobile' || props.className === 'tablet' ? 'block' : 'none')};
+    align-items: center;
+    transition: 0.3s;
   }
   @media (min-width: 1024px) {
-    display:block
+    & div {
+      gap: 2rem;
+    }
   }
+`
+export const ImageResponsive = styled.img`
+  object-fit: contain;
+  transition: 0.3s;
+  width: ${(props) =>
+    props.className === '2'
+      ? '200px'
+      : props.className === '1' || props.className === '3'
+      ? '175px'
+      : '145px'};
+  height: ${(props) =>
+    props.className === '2'
+      ? '430px'
+      : props.className === '1' || props.className === '3'
+      ? '378px'
+      : '313px'};
+`
+export const ImageBoxResponsive = styled.div`
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 0.3s;
+  background-image: url(${(props) => props.id && `${props.id}`});
+  width: ${(props) =>
+    props.className === '2'
+      ? '200px !important'
+      : props.className === '1' || props.className === '3'
+      ? '175px !important'
+      : '145px !important'};
+  height: ${(props) =>
+    props.className === '2'
+      ? '430px !important'
+      : props.className === '1' || props.className === '3'
+      ? '378px !important'
+      : '313px !important'};
 `
