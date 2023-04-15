@@ -15,7 +15,7 @@ export function elementHtmlSelect(selectHTML: HTMLElement | null, idName: string
 export function changeTrueValue(obj: FeaturesOptions[], myVar: AllFeatures): FeaturesOptions[] {
   obj = obj.map((o) => {
     if (o.active === true) {
-      return { ...o, value: false }
+      return { ...o, active: false }
     }
     return o
   })

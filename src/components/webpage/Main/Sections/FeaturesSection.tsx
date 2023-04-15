@@ -8,55 +8,65 @@ import {
   IconClockHour3,
   IconTargetArrow,
 } from '@tabler/icons-react'
+import { useState } from 'react'
+import { FeaturesOptions } from '../../../interface/interface'
+import { AllFeatures } from '../../../../enum/enum'
+import { changeTrueValue } from '../../../../helpers/helpers'
 
 const FEATURES_CONST = [
   {
     id: 0,
-    feature: 'Obtén un resumen de tus hábitos',
+    feature: AllFeatures.resume,
     description:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quasi harum consectetur? Facere, quaerat natus!',
-    icon: <IconCalendarCheck color='#363D4F'/>,
-    iconActive: <IconCalendarCheck color='#4B7EFF'/>,
+    icon: <IconCalendarCheck color='#363D4F' />,
+    iconActive: <IconCalendarCheck color='#4B7EFF' />,
     active: true,
   },
   {
     id: 1,
-    feature: 'Recordatorios de hábitos saludables',
+    feature: AllFeatures.remember,
     description:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quasi harum consectetur? Facere, quaerat natus!',
-    icon: <IconBellRinging color='#363D4F'/>,
-    iconActive: <IconBellRinging color='#4B7EFF'/>,
+    icon: <IconBellRinging color='#363D4F' />,
+    iconActive: <IconBellRinging color='#4B7EFF' />,
     active: false,
   },
   {
     id: 2,
-    feature: 'Temporizador de hábitos',
+    feature: AllFeatures.tempo,
     description:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quasi harum consectetur? Facere, quaerat natus!',
-    icon: <IconClockHour3 color='#363D4F'/>,
-    iconActive: <IconClockHour3 color='#4B7EFF'/>,
+    icon: <IconClockHour3 color='#363D4F' />,
+    iconActive: <IconClockHour3 color='#4B7EFF' />,
     active: false,
   },
   {
     id: 3,
-    feature: 'Contador de rachas',
+    feature: AllFeatures.streaks,
     description:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quasi harum consectetur? Facere, quaerat natus!',
-    icon: <IconTargetArrow color='#363D4F'/>,
-    iconActive: <IconTargetArrow color='#4B7EFF'/>,
+    icon: <IconTargetArrow color='#363D4F' />,
+    iconActive: <IconTargetArrow color='#4B7EFF' />,
     active: false,
   },
   {
-    id: 3,
-    feature: 'Estadísticas de productividad diaria',
+    id: 4,
+    feature: AllFeatures.chart,
     description:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quasi harum consectetur? Facere, quaerat natus!',
-    icon: <IconChartInfographic color='#363D4F'/>,
-    iconActive: <IconChartInfographic color='#4B7EFF'/>,
+    icon: <IconChartInfographic color='#363D4F' />,
+    iconActive: <IconChartInfographic color='#4B7EFF' />,
     active: false,
   },
 ]
 export const FeaturesSection = () => {
+  const [features, setFeatures] = useState<FeaturesOptions[]>(FEATURES_CONST)
+  const handleChangeFeature = (name: AllFeatures) => {
+    const newValue: FeaturesOptions[] = changeTrueValue(features, name)
+    console.log(newValue)
+    setFeatures(newValue)
+  }
   return (
     <style.FeaturesStyle>
       <style.FeaturesBackground>
@@ -73,13 +83,16 @@ export const FeaturesSection = () => {
             <style.ImageResponsive src={calendar} alt='feature app' />
           </style.FeaturesGridOne>
           <style.FeaturesGridTwo>
-            {FEATURES_CONST.map((item) => (
-              <style.ButtonOption key={item.id} className={`${item.active}`}>
+            {features.map((item) => (
+              <style.ButtonOption
+                key={item.id}
+                className={`${item.active}`}
+                onClick={() => handleChangeFeature(item.feature)}
+              >
                 <style.ButtonSpace>
                   <style.ButtonOptionTitle>
                     {!item.active && item.icon}
                     {item.active && item.iconActive}
-                    
                     <style.ButtonTitle className={`${item.active}`}>
                       {item.feature}
                     </style.ButtonTitle>
