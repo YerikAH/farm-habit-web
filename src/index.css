@@ -5,10 +5,13 @@
 :root{
   --black-100: #363D4F;
   --blue: #4B7EFF;
+  --blue-strong: #749BFF;
+  --blue-soft:  #215FFF;
   --black-50: #9A9EA7;
   --black-70: #727784;
   --black-10: #F9F9F9;
   --blue-5: #F0F3F9;
+  --white: #FFF;
 
 
   /* app */

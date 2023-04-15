@@ -52,3 +52,6 @@ a {
   text-decoration: none;
   list-style: none;
 }
+a,button {
+  cursor: pointer;
+}

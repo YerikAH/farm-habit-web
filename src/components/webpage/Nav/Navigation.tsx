@@ -1,4 +1,4 @@
-import { IconApps } from '@tabler/icons-react'
+import { IconApps, IconMenu2 } from '@tabler/icons-react'
 import * as style from '../../../styles/webpage/navigation/navigation'
 import Logo from '../../images/Logo'
 
@@ -9,24 +9,24 @@ export const Navigation = () => {
         <style.Navbar>
           <style.NavItem>
             <style.NavLink to='/'>
-              <Logo/>
+              <Logo />
             </style.NavLink>
           </style.NavItem>
         </style.Navbar>
 
-        <style.Navbar>
-          <style.NavItem>
-            <style.NavLink to='/'>Inicio</style.NavLink>
-          </style.NavItem>
+        <style.Navbar className='desktop'>
           <style.NavItem>
             <style.NavLink to='/'>Desarrolladores</style.NavLink>
+          </style.NavItem>
+          <style.NavItem>
+            <style.NavLink to='/'>Inicio</style.NavLink>
           </style.NavItem>
           <style.NavItem>
             <style.NavLink to='/'>Aplicación web</style.NavLink>
           </style.NavItem>
         </style.Navbar>
 
-        <style.Navbar>
+        <style.Navbar  className='desktop'>
           <style.NavItem>
             <style.NavLinkButton>
               <IconApps />
@@ -34,6 +34,10 @@ export const Navigation = () => {
             </style.NavLinkButton>
           </style.NavItem>
         </style.Navbar>
+
+        <style.NavbarHam>
+          <IconMenu2/>
+        </style.NavbarHam>
       </style.NavigationStyles>
     </style.HeaderStyle>
   )
