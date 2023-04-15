@@ -8,7 +8,7 @@ import appOne from '../../../../assets/app_1.png'
 
 const KnowInterface = () => {
   return (
-    <style.KnowInterfaceStyle>
+    <style.KnowInterfaceStyle id='know'>
       <style.HeadlinePrincipal>
         ¡Conoce la interfaz de la app FarmHabit para lograr tus metas!
       </style.HeadlinePrincipal>

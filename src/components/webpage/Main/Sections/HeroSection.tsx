@@ -15,10 +15,10 @@ const HeroSection = () => {
         Cada hábito que cultivas es una semilla que plantas para tu futuro
       </style.TextBodyPrincipal>
       <style.ButtonFill>
-        <IconDownload color='#FFF' size={20} strokeWidth={2.5}/>
         Descargar
+        <IconDownload color='#FFF' size={20} strokeWidth={2.5}/>
       </style.ButtonFill>
-      <style.ButtonLink href='#kow'>
+      <style.ButtonLink href='#know'>
         {' '}
         Conoce la aplicación <IconChevronDown />
       </style.ButtonLink>

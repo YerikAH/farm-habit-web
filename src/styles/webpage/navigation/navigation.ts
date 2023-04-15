@@ -38,6 +38,12 @@ export const Navbar = styled.ul`
 export const NavItem = styled.li``
 export const NavLink = styled(Link)`
   ${navlinkCss}
+  transition: 0.3s;
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  opacity: 0.7;
+  &:hover{
+    opacity: 1;
+  }
 `
 
 export const NavLinkButton = styled.a`
@@ -48,8 +54,17 @@ export const NavLinkButton = styled.a`
   gap: 0.5rem;
   background-color: transparent;
   border: 1px solid var(--black-100);
-  border-radius: 1rem;
+  border-radius: 0.8rem;
   padding: 0.5rem 2rem;
+  transition: 0.3s;
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  &:hover{
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    & svg{
+      stroke: var(--blue);
+    }
+  }
 `
 
 export const NavbarHam = styled.button`

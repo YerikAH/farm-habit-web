@@ -4,6 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -54,4 +55,8 @@ a {
 }
 a,button {
   cursor: pointer;
+}
+svg{
+  transition: 0.3s;
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
