@@ -25,13 +25,20 @@ export const BoxImages = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: auto;
-  gap: 2rem;
-`
-export const ImageResponsive = styled.img`
-  display: ${(props) => (props.className === 'mobile' ? 'block' : 'none')};
+  overflow: hidden;
+  gap: 1rem;
+  padding: 0 2rem;
   @media (min-width: 1024px) {
+    gap: 2rem;
+  }
+`
+export const ImageResponsive = styled.img`  
+  display: ${(props) => (props.className === 'mobile' ? 'block' : 'none')};
+  @media (min-width: 600px) {
     justify-content: center;
-    display: block;
+    display: ${(props) => (props.className === 'mobile' || props.className === 'tablet' ? 'block' : 'none')};
+  }
+  @media (min-width: 1024px) {
+    display:block
   }
 `

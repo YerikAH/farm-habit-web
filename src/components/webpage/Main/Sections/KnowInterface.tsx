@@ -19,9 +19,9 @@ const KnowInterface = () => {
       </style.TextBodyOne>
       <style.BoxImages>
         <style.ImageResponsive src={appFive} alt='app preview'/>
-        <style.ImageResponsive src={appFour} alt='app preview'/>
+        <style.ImageResponsive src={appFour} alt='app preview'  className='tablet'/>
         <style.ImageResponsive src={appOne} alt='app preview' className='mobile'/>
-        <style.ImageResponsive src={appTwo} alt='app preview'/>
+        <style.ImageResponsive src={appTwo} alt='app preview'  className='tablet'/>
         <style.ImageResponsive src={appThree} alt='app preview'/>
       </style.BoxImages>
     </style.KnowInterfaceStyle>

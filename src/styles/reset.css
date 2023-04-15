@@ -9,6 +9,7 @@
 html,
 body {
   height: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -44,4 +45,10 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+li,
+a {
+  text-decoration: none;
+  list-style: none;
 }
