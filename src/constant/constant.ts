@@ -33,3 +33,29 @@ export const IMAGES_DESKTOP:InterfaceDesktopImages[] = [
   },
 ]
 
+export const DEVELOPER_LIST = [
+  {
+    id: 0,
+    image: '',
+    name: 'Harvey Yerik',
+    job: 'Desarrollador Front End',
+    linkedin: '',
+    github: '',
+  },
+  {
+    id: 1,
+    image: '',
+    name: 'Harvey Yerik',
+    job: 'Desarrollador Front End',
+    linkedin: '',
+    github: '',
+  },
+  {
+    id: 2,
+    image: '',
+    name: 'Harvey Yerik',
+    job: 'Desarrollador Front End',
+    linkedin: '',
+    github: '',
+  },
+]

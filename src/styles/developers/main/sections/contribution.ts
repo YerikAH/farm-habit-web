@@ -13,7 +13,7 @@ export const ContributionSectionStyles = styled.section`
   justify-content: center;
   overflow: hidden;
   width: 100%;
-  margin: 10rem 0;
+  margin: 10rem 0 0 0 ;
   flex-direction: column;
   & div {
     width: 100%;
