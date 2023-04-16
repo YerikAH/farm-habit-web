@@ -35,9 +35,13 @@ export const BoxImages = styled.div`
   & div {
     display: flex;
     width: 100%;
-    justify-content: center;
-    align-items: center;
     transition: 0.3s;
+  }
+  @media (min-width: 630px) {
+    & div {
+      justify-content: center;
+      align-items: center;
+    }
   }
   @media (min-width: 1024px) {
     & div {
@@ -48,6 +52,7 @@ export const BoxImages = styled.div`
 export const ImageResponsive = styled.img`
   object-fit: contain;
   transition: 0.3s;
+  margin: 0px auto;
   width: ${(props) =>
     props.className === '2'
       ? '200px'

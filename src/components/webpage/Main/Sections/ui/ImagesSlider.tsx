@@ -6,7 +6,7 @@ import * as style from '../../../../../styles/webpage/main/sections/interface'
 const ImagesSlider = () => {
   return (
     <Swiper
-      effect='coverflow'
+      effect='slide'
       grabCursor={true}
       loop={true}
       zoom={true}
@@ -15,8 +15,8 @@ const ImagesSlider = () => {
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log('slide change')}
     >
-      {IMAGES_DESKTOP.map((item) => (
-        <SwiperSlide key={item.id}>
+      {IMAGES_DESKTOP.map((item,idx) => (
+        <SwiperSlide key={idx}>
           <style.ImageResponsive src={item.image} alt='image preview' />
         </SwiperSlide>
       ))}

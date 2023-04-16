@@ -24,7 +24,10 @@ export const NavigationStyles = styled.nav`
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 1rem ;
+  padding: 0.5rem 1rem;
+  @media (min-width: 720px) {
+    padding: 1rem ;
+  }
 `
 export const Navbar = styled.ul`
   justify-content: center;

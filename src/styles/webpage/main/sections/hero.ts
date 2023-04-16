@@ -78,7 +78,8 @@ export const ButtonFill = styled.button`
 export const ButtonLink = styled.a`
   background-color: transparent;
   padding: 0.5rem 1rem;
-  font: normal normal 700 1rem/1.2rem var(--font-primary);
+  font: normal normal 700 0.8rem/1.2rem var(--font-primary);
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,6 +108,15 @@ export const ButtonLink = styled.a`
     }
     100% {
       ${animation}
+    }
+  }
+  svg {
+    scale: 0.9;
+  }
+  @media (min-width: 460px) {
+    font: normal normal 700 1rem/1.2rem var(--font-primary);
+    svg {
+      scale: 1;
     }
   }
 `
