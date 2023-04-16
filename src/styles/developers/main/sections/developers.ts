@@ -1,25 +1,30 @@
 import styled from 'styled-components'
-import { HeadlinePrincipalGlobal, SectionCenterGlobal } from '../../../global/global'
+import { HeadlinePrincipalGlobal, SectionCenterGlobal, TextBodyOneGlobal } from '../../../global/global'
 
 export const DevelopersSectionStyles = styled.section`
   ${SectionCenterGlobal}
-  margin-top: 7rem;
   padding: 5rem 2rem;
   position: relative;
+  margin: 7rem auto;
 `
 export const HeadlinePrincipal = styled.h1`
   ${HeadlinePrincipalGlobal}
   padding: 0 2rem;
   max-width: 50rem;
 `
+export const TextBodyOne = styled.p`
+  ${TextBodyOneGlobal}
+  padding: 0 2rem;
+  max-width: 50rem;
+`
 export const DevelopersBox = styled.div`
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(3, 9.375rem);
-  gap: 6rem;
+  grid-template-columns: repeat(auto-fit, 9.375rem);
+  gap: 9rem;
   place-items: center;
   place-content: center;
-  margin-top: 4rem;
+  margin-top: 6rem;
 `
 export const DeveloperInfo = styled.div`
   display: grid;
