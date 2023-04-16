@@ -1,5 +1,9 @@
 import * as style from '../../../../styles/webpage/main/sections/features'
 import calendar from '../../../../assets/calendar_image.png'
+import remember from '../../../../assets/notify_image.png'
+import clock from '../../../../assets/clock_image.png'
+import chart from '../../../../assets/chart_image.png'
+import streak from '../../../../assets/streak_image.png'
 import {
   IconBellRinging,
   IconCalendarCheck,
@@ -13,7 +17,7 @@ import { FeaturesOptions } from '../../../interface/interface'
 import { AllFeatures } from '../../../../enum/enum'
 import { changeTrueValue } from '../../../../helpers/helpers'
 
-const FEATURES_CONST = [
+const FEATURES_CONST:FeaturesOptions[] = [
   {
     id: 0,
     feature: AllFeatures.resume,
@@ -22,6 +26,7 @@ const FEATURES_CONST = [
     icon: <IconCalendarCheck color='#363D4F' />,
     iconActive: <IconCalendarCheck color='#4B7EFF' />,
     active: true,
+    image: calendar,
   },
   {
     id: 1,
@@ -31,6 +36,7 @@ const FEATURES_CONST = [
     icon: <IconBellRinging color='#363D4F' />,
     iconActive: <IconBellRinging color='#4B7EFF' />,
     active: false,
+    image: remember,
   },
   {
     id: 2,
@@ -40,6 +46,7 @@ const FEATURES_CONST = [
     icon: <IconClockHour3 color='#363D4F' />,
     iconActive: <IconClockHour3 color='#4B7EFF' />,
     active: false,
+    image: clock,
   },
   {
     id: 3,
@@ -49,6 +56,7 @@ const FEATURES_CONST = [
     icon: <IconTargetArrow color='#363D4F' />,
     iconActive: <IconTargetArrow color='#4B7EFF' />,
     active: false,
+    image: streak,
   },
   {
     id: 4,
@@ -58,6 +66,7 @@ const FEATURES_CONST = [
     icon: <IconChartInfographic color='#363D4F' />,
     iconActive: <IconChartInfographic color='#4B7EFF' />,
     active: false,
+    image: chart,
   },
 ]
 export const FeaturesSection = () => {
@@ -80,7 +89,7 @@ export const FeaturesSection = () => {
         </style.TextBodyOne>
         <style.FeaturesGrid>
           <style.FeaturesGridOne>
-            <style.ImageResponsive src={calendar} alt='feature app' />
+            <style.ImageResponsive src={features.find(item => item.active === true)?.image} alt='feature app' />
           </style.FeaturesGridOne>
           <style.FeaturesGridTwo>
             {features.map((item) => (

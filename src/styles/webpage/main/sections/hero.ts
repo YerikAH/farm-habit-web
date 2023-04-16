@@ -29,7 +29,7 @@ export const HeadlinePrincipal = styled.h1`
 export const HeadlineSpecial = styled.h1`
   ${headlineCss}
   background: linear-gradient(270deg, var(--blue-soft) 30.47%, var(--blue) 47.99%, var(--blue-strong) 66.64%);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   color: var(--blue);
 `

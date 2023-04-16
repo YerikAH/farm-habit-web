@@ -7,6 +7,7 @@ export interface FeaturesOptions {
   icon: JSX.Element
   iconActive: JSX.Element
   active: boolean
+  image: string
 }
 
 export interface InterfaceDesktopImages {
