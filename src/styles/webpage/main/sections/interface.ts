@@ -3,7 +3,7 @@ import {
   HeadlinePrincipalGlobal,
   SectionCenterGlobal,
   TextBodyOneGlobal,
-} from '../../global/global'
+} from '../../../global/global'
 
 export const KnowInterfaceStyle = styled.section`
   ${SectionCenterGlobal};

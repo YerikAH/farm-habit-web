@@ -22,5 +22,9 @@ export const SectionCenterGlobal = css`
   max-width: 1200px;
   display: grid;
   place-items: center;
-
+`
+export const MainCenterGlobal = css`
+  width: 100vw;
+  display: grid;
+  place-items: center;
 `

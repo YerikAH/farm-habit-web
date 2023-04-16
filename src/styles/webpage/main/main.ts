@@ -1,7 +1,6 @@
 import styled from 'styled-components';
+import { MainCenterGlobal } from '../../global/global';
 
 export const MainStyles = styled.main`
-  width: 100vw;
-  display: grid;
-  place-items: center;
+ ${MainCenterGlobal}
 `

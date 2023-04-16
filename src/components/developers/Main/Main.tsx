@@ -1,7 +1,11 @@
+import { MainStyles } from '../../../styles/webpage/main/main'
+import DevelopersSection from './sections/DevelopersSection'
 
 const Main = () => {
   return (
-    <div>Main</div>
+    <MainStyles>
+      <DevelopersSection />
+    </MainStyles>
   )
 }
 

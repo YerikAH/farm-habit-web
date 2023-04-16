@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { SectionCenterGlobal } from '../../global/global'
+import { SectionCenterGlobal } from '../../../global/global'
 
 const animation = css`
   transform: translateY(-25%);
