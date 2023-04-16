@@ -2,7 +2,7 @@ import { order } from '../../../../../helpers/helpers'
 import { DragDropContext, Draggable, Droppable } from 'react-beautiful-dnd'
 import * as style from '../../../../../styles/webpage/main/sections/interface'
 import { IMAGES_DESKTOP } from '../../../../../constant/constant'
-import { InterfaceDesktopImages } from '../../../../interface/interface'
+import { InterfaceDesktopImages } from '../../../../../interface/interface'
 import { useState } from 'react'
 
 

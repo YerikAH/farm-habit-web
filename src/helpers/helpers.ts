@@ -1,4 +1,4 @@
-import { FeaturesOptions, InterfaceDesktopImages } from '../components/interface/interface'
+import { FeaturesOptions, InterfaceDesktopImages } from '../interface/interface'
 import { AllFeatures } from '../enum/enum'
 
 export function elementHtmlSelect(selectHTML: HTMLElement | null, idName: string): HTMLElement {

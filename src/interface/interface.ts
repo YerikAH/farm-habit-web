@@ -1,4 +1,4 @@
-import { AllFeatures } from '../../enum/enum'
+import { AllFeatures } from '../enum/enum'
 
 export interface FeaturesOptions {
   id: number

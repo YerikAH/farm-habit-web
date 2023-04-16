@@ -3,7 +3,7 @@ import appFour from '../assets/app_4.png'
 import appThree from '../assets/app_3.png'
 import appTwo from '../assets/app_2.png'
 import appOne from '../assets/app_1.png'
-import { InterfaceDesktopImages } from '../components/interface/interface'
+import {  InterfaceDesktopImages } from '../interface/interface'
 
 export const IMAGES_DESKTOP:InterfaceDesktopImages[] = [
   {
@@ -32,3 +32,4 @@ export const IMAGES_DESKTOP:InterfaceDesktopImages[] = [
     index: 1,
   },
 ]
+
