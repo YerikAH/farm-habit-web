@@ -3,12 +3,13 @@ import { MENU_CONTANT } from '../../../constant/constantJsx'
 import * as style from '../../../styles/webpage/navigation/menu_mobile'
 import { MenuMobileInterface } from '../../../interface/props'
 import { useEffect, useState } from 'react'
+import { MENU_MOBILE_CLASS } from '../../../constant/classDinamic'
 
 const MenuMobile = ({ menu, setMenu }: MenuMobileInterface) => {
   const [styleClass, setStyleClass] = useState('')
   useEffect(() => {
     if (menu) {
-      setStyleClass('menu-mobile-active')
+      setStyleClass(MENU_MOBILE_CLASS)
     } else {
       setStyleClass('')
     }

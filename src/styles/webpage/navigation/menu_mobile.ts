@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
+import { MENU_MOBILE_CLASS } from '../../../constant/classDinamic'
 
 export const MenuMobileStyles = styled.div`
   position: fixed;
   transition: 0.3s;
-  right: ${(props) => (props.className === 'menu-mobile-active' ? '-13.5625rem' : '0')};
+  right: ${(props) => (props.className === MENU_MOBILE_CLASS ? '-13.5625rem' : '0')};
   top: 0;
   z-index: 500;
   background: var(--white-03);
@@ -12,6 +13,9 @@ export const MenuMobileStyles = styled.div`
   backdrop-filter: blur(20px);
   width: 13.5625rem;
   height: 100vh;
+   @media (min-width: 800px) {
+    display: none;
+  }
 `
 export const MenuMobileCenter = styled.div`
   position: relative;

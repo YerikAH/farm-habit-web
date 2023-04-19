@@ -1,0 +1,1 @@
+export const MENU_MOBILE_CLASS = 'menu-mobile-active'

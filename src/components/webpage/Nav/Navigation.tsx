@@ -6,7 +6,7 @@ import MenuMobile from './MenuMobile'
 import { useState } from 'react'
 
 export const Navigation = () => {
-  const [menu, setMenu] = useState(false)
+  const [menu, setMenu] = useState(true)
   return (
     <>
       <style.HeaderStyle>
