@@ -2,19 +2,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
 @import url('./styles/reset.css');
 
-:root{
-  --black-100: #363D4F;
-  --blue: #4B7EFF;
-  --blue-strong: #749BFF;
-  --blue-soft:  #215FFF;
-  --black-50: #9A9EA7;
+:root {
+  --black-100: #363d4f;
+  --blue: #4b7eff;
+  --blue-strong: #749bff;
+  --blue-soft: #215fff;
+  --black-50: #9a9ea7;
   --black-70: #727784;
-  --black-10: #F9F9F9;
-  --blue-5: #F0F3F9;
-  --white: #FFF;
+  --black-10: #f9f9f9;
+  --blue-5: #f0f3f9;
+  --white: #fff;
   --white-03: rgba(255, 255, 255, 0.03);
 
   /* app */
-  --font-primary: 'Nunito Sans', sans-serif;;
+  --font-primary: 'Nunito Sans', sans-serif;
+}
 
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }

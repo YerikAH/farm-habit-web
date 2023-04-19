@@ -43,7 +43,7 @@ export const FooterStylesBox = styled.div`
   align-items: center;
   flex-direction: column;
   padding: 4.5rem 1rem;
-  @media screen and (min-width: 720px){
+  @media screen and (min-width: 720px) {
     flex-direction: row;
   }
 `
@@ -64,6 +64,8 @@ export const FooterStylesTwo = styled.div`
   display: grid;
   margin: 2rem 1rem;
   place-items: center;
+  margin: auto auto 0 auto;
+  padding: 3rem 0px;
 `
 export const FooterTextTwo = styled.p`
   ${text}
@@ -80,7 +82,7 @@ export const CircleDecoration = styled.div`
 `
 
 export const CircleDecorationOne = styled.div`
-${circle}
+  ${circle}
   top: -10rem;
   right: -10rem;
   width: 350px;
@@ -88,7 +90,7 @@ ${circle}
 `
 
 export const CircleDecorationTwo = styled.div`
-${circle}
+  ${circle}
   bottom: -20rem;
   left: 0;
   right: 0;
@@ -97,7 +99,7 @@ ${circle}
   height: 400px;
 `
 export const CircleDecorationThree = styled.div`
-${circle}
+  ${circle}
   bottom: -10rem;
   left: -10rem;
   width: 350px;
