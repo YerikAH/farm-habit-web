@@ -1,4 +1,4 @@
-import { AllFeatures } from '../enum/enum'
+import { AllFeatures, PathRoutes } from '../enum/enum'
 
 export interface FeaturesOptions {
   id: number
@@ -14,4 +14,11 @@ export interface InterfaceDesktopImages {
   id: number,
   image: string
   index:number
+}
+export interface MenuWebPage {
+  id: number,
+  name: string,
+  active: boolean,
+  icon: JSX.Element,
+  path: PathRoutes
 }

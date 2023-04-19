@@ -11,9 +11,12 @@ const text = css`
 const circle = css`
   position: absolute;
   background-color: transparent;
-  border: 0.7rem solid var(--white);
+  border: 0.3rem solid var(--white);
   border-radius: 15rem;
   opacity: 0.3;
+  @media (min-width: 720px) {
+    border: 0.7rem solid var(--white);
+  }
 `
 
 export const FooterStyles = styled.footer`
@@ -38,7 +41,11 @@ export const FooterStylesBox = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3rem 1rem;
+  flex-direction: column;
+  padding: 4.5rem 1rem;
+  @media screen and (min-width: 720px){
+    flex-direction: row;
+  }
 `
 export const FooterLogoWhite = styled.div`
   display: flex;

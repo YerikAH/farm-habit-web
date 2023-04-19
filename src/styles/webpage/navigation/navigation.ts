@@ -11,12 +11,15 @@ const navlinkCss = css`
 export const HeaderStyle = styled.header`
   position: fixed;
   width: 100vw;
-  background-color: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(5px);
+  background-color: var(--white-03);
+  backdrop-filter: blur(20px);
   z-index: 100;
   display: flex;
   justify-content: center;
   align-items: center;
+    @media (min-width: 800px) {
+  backdrop-filter: blur(5px);
+  }
 `
 export const NavigationStyles = styled.nav`
   max-width: 1200px;

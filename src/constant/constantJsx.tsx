@@ -4,17 +4,19 @@ import clock from '../assets/clock_image.png'
 import chart from '../assets/chart_image.png'
 import streak from '../assets/streak_image.png'
 import {
+  IconAppWindow,
   IconBellRinging,
   IconCalendarCheck,
   IconChartInfographic,
   IconClockHour3,
+  IconCode,
+  IconHome,
   IconTargetArrow,
 } from '@tabler/icons-react'
-import { AllFeatures } from '../enum/enum'
-import { FeaturesOptions } from '../interface/interface'
+import { AllFeatures, PathRoutes } from '../enum/enum'
+import { FeaturesOptions, MenuWebPage } from '../interface/interface'
 
-
-export const FEATURES_CONST:FeaturesOptions[] = [
+export const FEATURES_CONST: FeaturesOptions[] = [
   {
     id: 0,
     feature: AllFeatures.resume,
@@ -64,5 +66,29 @@ export const FEATURES_CONST:FeaturesOptions[] = [
     iconActive: <IconChartInfographic color='#4B7EFF' />,
     active: false,
     image: chart,
+  },
+]
+
+export const MENU_CONTANT:MenuWebPage[] = [
+  {
+    id: 0,
+    name: 'Aplicación web',
+    active: false,
+    icon: <IconAppWindow />,
+    path: PathRoutes.webpage
+  },
+  {
+    id: 1,
+    name: 'Inicio',
+    active: false,
+    icon: <IconHome />,
+    path: PathRoutes.webpage
+  },
+  {
+    id: 2,
+    name: 'Desarrolladores',
+    active: false,
+    icon: <IconCode />,
+    path: PathRoutes.developers
   },
 ]

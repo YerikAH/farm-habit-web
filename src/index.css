@@ -12,7 +12,7 @@
   --black-10: #F9F9F9;
   --blue-5: #F0F3F9;
   --white: #FFF;
-
+  --white-03: rgba(255, 255, 255, 0.03);
 
   /* app */
   --font-primary: 'Nunito Sans', sans-serif;;
