@@ -66,6 +66,14 @@ export const FooterStylesTwo = styled.div`
   place-items: center;
   margin: auto auto 0 auto;
   padding: 3rem 0px;
+  border-top: 1px solid var(--black-100);
+`
+export const IconLink = styled.a`
+  opacity: 0.8;
+  transition: 0.3s;
+  &:hover {
+    opacity: 1;
+  }
 `
 export const FooterTextTwo = styled.p`
   ${text}

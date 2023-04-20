@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { HeadlinePrincipalGlobal, MainCenterGlobal, SectionCenterGlobal } from '../global/global'
+import { MainCenterGlobal, SectionCenterGlobal } from '../global/global'
 
 export const MainError = styled.main`
   ${MainCenterGlobal}
@@ -73,29 +73,68 @@ export const ButtonComeBack = styled.button`
 
 const CloudAnimation = css`
   background: rgba(255, 255, 255, 0.01);
-  box-shadow: 0px 0px 34px 36px rgba(0, 0, 0, 0.02);
-  backdrop-filter: blur(5.5px);
+  box-shadow: 0px 0px 15px 15px rgba(0, 0, 0, 0.01);
+  backdrop-filter: blur(5px);
   border-radius: 15rem;
   position: absolute;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  @keyframes cloud {
+    0% {
+      transform: translateX(-25%);
+      scale: 1;
+    }
+    50% {
+      transform: none;
+      scale: 1.3;
+    }
+    100% {
+      transform: translateX(-25%);
+      scale: 1;
+    }
+  }
+  @keyframes cloudRight {
+    0% {
+      transform: translateX(25%);
+      scale: 1;
+    }
+    50% {
+      transform: none;
+      scale: 1.3;
+    }
+    100% {
+      transform: translateX(25%);
+      scale: 1;
+    }
+  }
 `
 export const CloudBase = styled.div`
   ${CloudAnimation}
-  width: 20rem;
-  height: 20rem;
   left: ${(props) => props.id === 'left' && `${props.className}`};
   right: ${(props) => props.id === 'right' && `${props.className}`};
   top: 0;
   bottom: 0;
   margin: auto 0;
+  animation-duration: 8s;
+  @media (min-width: 800px) {
+    width: 20rem;
+    height: 20rem;
+    display: block;
+  }
 `
 export const CloudBaseBig = styled.div`
   ${CloudAnimation}
-  width: 30rem;
-  height: 30rem;
+  display: none;
   border-radius: 55rem;
   top: 0;
   bottom: 0;
   left: ${(props) => props.id === 'left' && `${props.className}`};
   right: ${(props) => props.id === 'right' && `${props.className}`};
   margin: auto 0;
+  animation-duration: 8s;
+  @media (min-width: 800px) {
+    width: 30rem;
+    height: 30rem;
+    display: block;
+  }
 `
