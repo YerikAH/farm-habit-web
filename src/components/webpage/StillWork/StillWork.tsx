@@ -4,12 +4,15 @@ import * as style from '../../../styles/still_work/still_work'
 import Navigation from '../Nav/Navigation'
 import SampleFooter from '../Footer/sections/SampleFooter'
 import DecorationWork from './ui/DecorationWork'
+import { CircleDecoration } from '../../../styles/webpage/main/sections/hero'
 
 const StillWork = () => {
   return (
     <>
       <Navigation />
       <style.MainStyles>
+        <CircleDecoration className='left' />
+        <CircleDecoration />
         <style.SectionWork>
           <DecorationWork />
           <style.HeadlinePrincipal>ESTAMOS TRABAJANDO</style.HeadlinePrincipal>

@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { MainCenterGlobal, SectionCenterGlobal } from '../global/global'
 
 export const MainStyles = styled.main`
@@ -7,13 +7,13 @@ export const MainStyles = styled.main`
 `
 export const SectionWork = styled.section`
   ${SectionCenterGlobal}
-  margin: 10rem 0;
+  margin: 12rem 0 5rem 0;
   padding: 5rem 2rem;
   position: relative;
 `
 export const HeadlinePrincipal = styled.h1`
   letter-spacing: 0.05em;
-  font: normal normal 900 2.5rem/3rem var(--font-primary);
+  font: normal normal 900 2rem/3rem var(--font-primary);
   color: var(--black-100);
   text-align: center;
   margin-top: 2rem;
@@ -76,9 +76,30 @@ export const BoxDecorationIcons = styled.div`
   width: 100%;
   justify-content: center;
   align-items: center;
+  max-width: 23.625rem;
+`
+const animation = css`
+  scale: 0.8;
+  animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
 `
 export const IconAnimation = styled.div`
-  position: absolute;
+  position: relative;
   top: ${(props) => props.id && `${props.id}rem`};
   left: ${(props) => props.className && `${props.className}rem`};
+  animation-name: iconFloat;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  @keyframes iconFloat {
+    0% {
+      ${animation}
+    }
+    50% {
+      transform: none;
+      scale: 1.2;
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+    100% {
+      ${animation}
+    }
+  }
 `
