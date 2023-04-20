@@ -69,6 +69,11 @@ export const BoxDecoration = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  scale: 0.8;
+  position: relative;
+  @media screen and (min-width: 720px) {
+    scale: 1;
+  }
 `
 export const BoxDecorationIcons = styled.div`
   display: flex;
@@ -77,6 +82,7 @@ export const BoxDecorationIcons = styled.div`
   justify-content: center;
   align-items: center;
   max-width: 23.625rem;
+  right: -15px;
 `
 const animation = css`
   scale: 0.8;
