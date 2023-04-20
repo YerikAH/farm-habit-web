@@ -16,6 +16,7 @@ export const HeadlinePrincipal = styled.h1`
   font: normal normal 900 2.5rem/3rem var(--font-primary);
   color: var(--black-100);
   text-align: center;
+  margin-top: 2rem;
   @media (min-width: 720px) {
     font: normal normal 900 4rem/5rem var(--font-primary);
   }
@@ -62,5 +63,22 @@ export const ButtonComeBack = styled.button`
   }
 `
 
-export const BoxDecoration = styled.div``
-export const IconAnimation = styled.div``
+export const BoxDecoration = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+`
+export const BoxDecorationIcons = styled.div`
+  display: flex;
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+`
+export const IconAnimation = styled.div`
+  position: absolute;
+  top: ${(props) => props.id && `${props.id}rem`};
+  left: ${(props) => props.className && `${props.className}rem`};
+`

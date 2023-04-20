@@ -5,7 +5,7 @@ import { MENU_CONTANT } from '../../../constant/constantJsx'
 import MenuMobile from './MenuMobile'
 import { useState } from 'react'
 
-export const Navigation = () => {
+const Navigation = () => {
   const [menu, setMenu] = useState(true)
   return (
     <>
@@ -36,12 +36,13 @@ export const Navigation = () => {
             </style.NavItem>
           </style.Navbar>
 
-          <style.NavbarHam onClick={()=> setMenu(!menu)}>
+          <style.NavbarHam onClick={() => setMenu(!menu)}>
             <IconMenu2 />
           </style.NavbarHam>
         </style.NavigationStyles>
       </style.HeaderStyle>
-      <MenuMobile menu={menu} setMenu={setMenu}/>
+      <MenuMobile menu={menu} setMenu={setMenu} />
     </>
   )
 }
+export default Navigation

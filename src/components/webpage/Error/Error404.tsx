@@ -1,16 +1,15 @@
 import { IconArrowBack } from '@tabler/icons-react'
 import * as style from '../../../styles/error/error'
-import { Navigation } from '../Nav/Navigation'
+import Navigation from '../Nav/Navigation'
 import SampleFooter from '../Footer/sections/SampleFooter'
 import DecorationCloud from './ui/DecorationCloud'
-
 
 const Error404 = () => {
   return (
     <>
       <Navigation />
       <style.MainError>
-        <DecorationCloud/>
+        <DecorationCloud />
         <style.SectionError>
           <style.HeadlineError>
             Error <style.HeadlineErrorJust>404</style.HeadlineErrorJust>

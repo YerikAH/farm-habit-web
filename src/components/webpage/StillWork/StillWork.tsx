@@ -1,8 +1,9 @@
 import { IconArrowBack } from '@tabler/icons-react'
 import { ButtonComeBack } from '../../../styles/error/error'
 import * as style from '../../../styles/still_work/still_work'
-import { Navigation } from '../Nav/Navigation'
+import Navigation from '../Nav/Navigation'
 import SampleFooter from '../Footer/sections/SampleFooter'
+import DecorationWork from './ui/DecorationWork'
 
 const StillWork = () => {
   return (
@@ -10,6 +11,7 @@ const StillWork = () => {
       <Navigation />
       <style.MainStyles>
         <style.SectionWork>
+          <DecorationWork />
           <style.HeadlinePrincipal>ESTAMOS TRABAJANDO</style.HeadlinePrincipal>
           <style.TextBody>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi erat mi, tincidunt vitae

@@ -1,11 +1,11 @@
 import Main from '../components/developers/Main/Main'
-import { Navigation } from '../components/webpage/Nav/Navigation'
+import Navigation from '../components/webpage/Nav/Navigation'
 
 const DevPage = () => {
   return (
     <>
       <Navigation />
-      <Main/>
+      <Main />
     </>
   )
 }

@@ -1,12 +1,11 @@
 import Main from '../components/webpage/Main/Main'
-import { Navigation } from '../components/webpage/Nav/Navigation'
+import Navigation from '../components/webpage/Nav/Navigation'
 
 const WebPage = () => {
   return (
     <>
       <Navigation />
       <Main />
-
     </>
   )
 }
