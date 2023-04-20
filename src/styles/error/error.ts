@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components'
 import { MainCenterGlobal, SectionCenterGlobal } from '../global/global'
+import { Link } from 'react-router-dom'
 
 export const MainError = styled.main`
   ${MainCenterGlobal}
@@ -42,7 +43,7 @@ export const TextError = styled.p`
     font: normal normal 400 1rem/1.5rem var(--font-primary);
   }
 `
-export const ButtonComeBack = styled.button`
+export const ButtonComeBack = styled(Link)`
   background-color: var(--blue);
   transition: 0.3s;
   transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);

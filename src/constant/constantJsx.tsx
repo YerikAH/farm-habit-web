@@ -9,9 +9,20 @@ import {
   IconCalendarCheck,
   IconChartInfographic,
   IconClockHour3,
+  IconCloudCode,
   IconCode,
+  IconCodeDots,
+  IconDivide,
+  IconGitPullRequest,
   IconHome,
+  IconMathIntegralX,
+  IconMathPi,
+  IconMinus,
+  IconMultiplier05x,
+  IconPlus,
+  IconRegex,
   IconTargetArrow,
+  IconVariable,
 } from '@tabler/icons-react'
 import { AllFeatures, PathRoutes } from '../enum/enum'
 import { FeaturesOptions, MenuWebPage } from '../interface/interface'
@@ -69,26 +80,88 @@ export const FEATURES_CONST: FeaturesOptions[] = [
   },
 ]
 
-export const MENU_CONTANT:MenuWebPage[] = [
+export const MENU_CONTANT: MenuWebPage[] = [
   {
     id: 0,
     name: 'Aplicación web',
     active: false,
     icon: <IconAppWindow />,
-    path: PathRoutes.webpage
+    path: PathRoutes.work,
   },
   {
     id: 1,
     name: 'Inicio',
     active: false,
     icon: <IconHome />,
-    path: PathRoutes.webpage
+    path: PathRoutes.webpage,
   },
   {
     id: 2,
     name: 'Desarrolladores',
     active: false,
     icon: <IconCode />,
-    path: PathRoutes.developers
+    path: PathRoutes.developers,
+  },
+]
+export const ICON_ANIMATIONS = [
+  {
+    icon: <IconPlus color='#363d4f' />,
+    x: 10,
+    y: -7,
+  },
+  {
+    icon: <IconMinus color='#363d4f' />,
+    x: 14,
+    y: -6,
+  },
+  {
+    icon: <IconDivide color='#363d4f' />,
+    x: 8,
+    y: -4,
+  },
+  {
+    icon: <IconMultiplier05x color='#363d4f' />,
+    x: 1,
+    y: -7,
+  },
+  {
+    icon: <IconVariable color='#363d4f' />,
+    x: -1,
+    y: -4,
+  },
+  {
+    icon: <IconMathIntegralX color='#363d4f' />,
+    x: -7,
+    y: -7,
+  },
+  {
+    icon: <IconMathPi color='#363d4f' />,
+    x: 0,
+    y: -1,
+  },
+  {
+    icon: <IconCode color='#363d4f' />,
+    x: -13,
+    y: -4,
+  },
+  {
+    icon: <IconGitPullRequest color='#363d4f' />,
+    x: -10,
+    y: -2,
+  },
+  {
+    icon: <IconCodeDots color='#363d4f' />,
+    x: -16,
+    y: -1,
+  },
+  {
+    icon: <IconRegex color='#363d4f' />,
+    x: 3,
+    y: -3,
+  },
+  {
+    icon: <IconCloudCode color='#363d4f' />,
+    x: -2,
+    y: -1,
   },
 ]

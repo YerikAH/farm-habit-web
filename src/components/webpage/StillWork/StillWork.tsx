@@ -1,10 +1,11 @@
 import { IconArrowBack } from '@tabler/icons-react'
-import { ButtonComeBack } from '../../../styles/error/error'
+
 import * as style from '../../../styles/still_work/still_work'
 import Navigation from '../Nav/Navigation'
 import SampleFooter from '../Footer/sections/SampleFooter'
 import DecorationWork from './ui/DecorationWork'
 import { CircleDecoration } from '../../../styles/webpage/main/sections/hero'
+import { PathRoutes } from '../../../enum/enum'
 
 const StillWork = () => {
   return (
@@ -21,9 +22,9 @@ const StillWork = () => {
             risus sit amet, ultricies pretium ante. Curabitur eu lacinia augue. Aenean id fringilla
             ex, ac aliquet ligula.
           </style.TextBody>
-          <ButtonComeBack>
+          <style.ButtonComeBack to={PathRoutes.webpage}>
             Volver atras <IconArrowBack color='#FFF' />
-          </ButtonComeBack>
+          </style.ButtonComeBack>
         </style.SectionWork>
       </style.MainStyles>
       <SampleFooter />
