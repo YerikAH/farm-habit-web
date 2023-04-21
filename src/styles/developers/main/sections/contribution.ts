@@ -13,7 +13,7 @@ export const ContributionSectionStyles = styled.section`
   justify-content: center;
   overflow: hidden;
   width: 100%;
-  margin: 10rem 0 0 0 ;
+  margin: 10rem 0 0 0;
   flex-direction: column;
   & div {
     width: 100%;
@@ -71,6 +71,7 @@ export const ContributionForm = styled.form`
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   padding: 0px 2rem;
   @media (min-width: 720px) {
     flex-direction: row;
@@ -103,6 +104,13 @@ export const ContributionButton = styled.button`
     width: auto;
     font: normal normal 400 1rem/1.5rem var(--font-primary);
   }
+`
+export const ErrorForm = styled.span`
+  position: absolute;
+  bottom: -1.5rem;
+  font: normal italic 500 0.9rem/1.2rem var(--font-primary);
+  left: 0;
+  color: var(--red);
 `
 export const TextLinkOne = styled.a`
   ${TextBodyOneGlobal}

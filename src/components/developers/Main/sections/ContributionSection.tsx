@@ -1,10 +1,11 @@
 import * as style from '../../../../styles/developers/main/sections/contribution'
+import FormContribution from './ui/FormContribution'
 
 const ContributionSection = () => {
   return (
     <style.ContributionSectionStyles>
       <style.ContributionSectionBackground></style.ContributionSectionBackground>
-        <style.ContributionBackgroundBlur></style.ContributionBackgroundBlur>
+      <style.ContributionBackgroundBlur></style.ContributionBackgroundBlur>
       <style.ContributionSectionContent>
         <style.HeadlinePrincipal>¡Contribuye con nosotros!</style.HeadlinePrincipal>
         <style.TextBodyOne>
@@ -12,10 +13,7 @@ const ContributionSection = () => {
           risus sit amet, ultricies pretium ante. Curabitur eu lacinia augue. Aenean id fringilla
           ex, ac aliquet ligula.
         </style.TextBodyOne>
-        <style.ContributionForm>
-          <style.ContributionInput placeholder='Ingresa tu email . . .' />
-          <style.ContributionButton>Enviar</style.ContributionButton>
-        </style.ContributionForm>
+        <FormContribution />
         <style.TextBodyOne>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit{' '}
           <style.TextLinkOne>haz click aquí.</style.TextLinkOne>

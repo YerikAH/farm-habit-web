@@ -18,9 +18,9 @@ const StillWork = () => {
           <DecorationWork />
           <style.HeadlinePrincipal>ESTAMOS TRABAJANDO</style.HeadlinePrincipal>
           <style.TextBody>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi erat mi, tincidunt vitae
-            risus sit amet, ultricies pretium ante. Curabitur eu lacinia augue. Aenean id fringilla
-            ex, ac aliquet ligula.
+            Estamos trabajando arduamente en nuestra aplicación web para brindarte una experiencia
+            en línea de calidad. Próximamente podrás disfrutar de una interfaz más intuitiva,
+            funciones mejoradas y un acceso fácil y rápido a nuestros servicios.
           </style.TextBody>
           <style.ButtonComeBack to={PathRoutes.webpage}>
             Volver atras <IconArrowBack color='#FFF' />

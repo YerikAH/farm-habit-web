@@ -12,9 +12,8 @@ const DecorationFooter = () => {
           <LogoWhite />
         </style.FooterLogoWhite>
         <style.FooterTextOne>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi erat mi, tincidunt vitae
-          risus sit amet, ultricies pretium ante. Curabitur eu lacinia augue. Aenean id fringilla
-          ex, ac aliquet ligula.
+          ¿Listo para construir hábitos saludables y eliminar los malos? Únete a la comunidad de
+          Farm Habit y descubre cómo puedes transformar tu vida para siempre.
         </style.FooterTextOne>
       </style.FooterStylesBox>
     </style.FooterStylesOne>

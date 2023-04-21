@@ -9,11 +9,11 @@ export const FeaturesSection = () => {
           Desarrolla hábitos saludables con nuestras herramientas
         </style.HeadlinePrincipal>
         <style.TextBodyOne>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi erat mi, tincidunt vitae
-          risus sit amet, ultricies pretium ante. Curabitur eu lacinia augue. Aenean id fringilla
-          ex, ac aliquet ligula.
+          Nuestra plataforma cuenta con una variedad de características y herramientas para
+          motivarte y mantener un seguimiento de tus hábitos diarios. Descubre cómo nuestra app
+          puede ayudarte a establecer hábitos saludables y a mejorar tu bienestar general.
         </style.TextBodyOne>
-        <FeaturesSwitch/>
+        <FeaturesSwitch />
       </style.FeaturesBackground>
     </style.FeaturesStyle>
   )

@@ -16,9 +16,9 @@ const Error404 = () => {
             Error <style.HeadlineErrorJust>404</style.HeadlineErrorJust>
           </style.HeadlineError>
           <style.TextError>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi erat mi, tincidunt vitae
-            risus sit amet, ultricies pretium ante. Curabitur eu lacinia augue. Aenean id fringilla
-            ex, ac aliquet ligula.
+            Lo sentimos, la página que estás buscando no se encuentra disponible. El error 404
+            indica que la URL ingresada no es válida o que la página ha sido eliminada o movida. Por
+            favor, verifica la dirección web e intenta nuevamente.
           </style.TextError>
           <style.ButtonComeBack to={PathRoutes.webpage}>
             Volver atras

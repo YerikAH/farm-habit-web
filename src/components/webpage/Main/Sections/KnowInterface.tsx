@@ -11,9 +11,9 @@ const KnowInterface = () => {
         ¡Conoce la interfaz de la app FarmHabit para lograr tus metas!
       </style.HeadlinePrincipal>
       <style.TextBodyOne>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi erat mi, tincidunt vitae
-        risus sit amet, ultricies pretium ante. Curabitur eu lacinia augue. Aenean id fringilla ex,
-        ac aliquet ligula.
+        ¿Quieres mejorar tu estilo de vida y alcanzar tus objetivos de manera más efectiva? ¡La app
+        FarmHabit es tu solución! Nuestra plataforma te ofrece una interfaz innovadora y fácil de
+        usar para establecer hábitos saludables y mantener un seguimiento de tu progreso.
       </style.TextBodyOne>
       <style.BoxImages>{renderImages ? <ImagesDrop /> : <ImagesSlider />}</style.BoxImages>
     </style.KnowInterfaceStyle>
