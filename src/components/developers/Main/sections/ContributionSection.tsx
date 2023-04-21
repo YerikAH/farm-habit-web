@@ -1,3 +1,4 @@
+import { GITHUB_LINK } from '../../../../constant/linkApp'
 import * as style from '../../../../styles/developers/main/sections/contribution'
 import FormContribution from './ui/FormContribution'
 
@@ -9,14 +10,15 @@ const ContributionSection = () => {
       <style.ContributionSectionContent>
         <style.HeadlinePrincipal>¡Contribuye con nosotros!</style.HeadlinePrincipal>
         <style.TextBodyOne>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi erat mi, tincidunt vitae
-          risus sit amet, ultricies pretium ante. Curabitur eu lacinia augue. Aenean id fringilla
-          ex, ac aliquet ligula.
+          ¡Únete a nuestro equipo en Farm Habit! Si eres una persona apasionada por la salud y el
+          bienestar, te invitamos a ser parte de nuestro proyecto para ayudar a más personas a
+          construir hábitos saludables. ¡Tu aporte puede hacer una gran diferencia!
         </style.TextBodyOne>
         <FormContribution />
         <style.TextBodyOne>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit{' '}
-          <style.TextLinkOne>haz click aquí.</style.TextLinkOne>
+          También puedes contribuir a nuestro proyecto en GitHub.{' '}
+          <style.TextLinkOne href={GITHUB_LINK}>Haz clic aquí</style.TextLinkOne> para acceder a
+          nuestro repositorio
         </style.TextBodyOne>
       </style.ContributionSectionContent>
     </style.ContributionSectionStyles>

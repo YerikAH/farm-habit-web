@@ -2,8 +2,6 @@ import * as style from '../../../../styles/developers/main/sections/developers'
 import { CircleDecoration } from '../../../../styles/webpage/main/sections/hero'
 import CardDevelopers from './ui/CardDevelopers'
 
-
-
 const DevelopersSection = () => {
   return (
     <style.DevelopersSectionStyles>
@@ -11,11 +9,10 @@ const DevelopersSection = () => {
       <CircleDecoration />
       <style.HeadlinePrincipal>Desarrolladores</style.HeadlinePrincipal>
       <style.TextBodyOne>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi erat mi, tincidunt vitae
-          risus sit amet, ultricies pretium ante. Curabitur eu lacinia augue. Aenean id fringilla
-          ex, ac aliquet ligula.
-        </style.TextBodyOne>
-        <CardDevelopers/>
+        En nuestro equipo de desarrolladores, combinamos habilidades técnicas y creativas para
+        construir aplicaciones innovadoras que satisfacen las necesidades de nuestros usuarios.
+      </style.TextBodyOne>
+      <CardDevelopers />
     </style.DevelopersSectionStyles>
   )
 }
