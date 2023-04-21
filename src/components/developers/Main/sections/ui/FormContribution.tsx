@@ -39,9 +39,11 @@ const FormContribution = () => {
   }
   return (
     <style.ContributionForm action='https://formsubmit.co/yerik05vh@gmail.com' method='POST'>
+      <input type='hidden' name='name' value='Farm Habit' />
+      <input type='hidden' name='email' value='farm@habit.com' />
       <style.ContributionInput
         placeholder='Ingresa tu email . . .'
-        name='email'
+        name='message'
         type='email'
         value={inputEmail}
         onChange={(e) => handleChange(e)}
