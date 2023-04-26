@@ -4,6 +4,7 @@ import WebPage from './pages/WebPage'
 import DevPage from './pages/DevPage'
 import Error404 from './components/webpage/Error/Error404'
 import StillWork from './components/webpage/StillWork/StillWork'
+import AppPage from './pages/AppPage'
 
 function App() {
   const location = useLocation()
@@ -13,6 +14,7 @@ function App() {
       <Route path={PathRoutes.developers} element={<DevPage />} />
       <Route path="*" element={<Error404 />} />
       <Route path={PathRoutes.work} element={<StillWork/>}/>
+      <Route path={PathRoutes.app} element={<AppPage/>}/>
     </Routes>
   )
 }

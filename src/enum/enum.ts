@@ -2,6 +2,7 @@ export enum PathRoutes {
   webpage = '/',
   developers = '/developers',
   work = '/work',
+  app = '/app',
 }
 export enum AllFeatures {
   resume = 'Obtén un resumen de tus hábitos',
