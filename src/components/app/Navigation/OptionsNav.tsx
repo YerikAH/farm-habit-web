@@ -1,4 +1,13 @@
-import { IconSquareRoundedCheck, IconChartInfographic, IconAlarm } from '@tabler/icons-react'
+import {
+  IconPlus,
+  IconSquareRoundedCheck,
+  IconChartInfographic,
+  IconAlarm,
+  IconHourglassHigh,
+  IconAdjustmentsHorizontal,
+  IconListCheck,
+  IconSquareRoundedPlus,
+} from '@tabler/icons-react'
 import * as style from '../../../styles/app/Nav/options_nav'
 const OPTIONS_PAGE = [
   {
@@ -33,6 +42,38 @@ const OptionsNav = () => {
             {item.name}
           </style.ButtonPage>
         ))}
+      </style.ButtonOptionsBox>
+      <style.TitleOptions>STACK HABITOS</style.TitleOptions>
+      <style.ButtonOptionsBox>
+        <style.ButtonExtra>
+          <IconPlus />
+          Nuevo stack
+        </style.ButtonExtra>
+      </style.ButtonOptionsBox>
+
+      <style.TitleOptions>HERRAMIENTAS</style.TitleOptions>
+      <style.ButtonOptionsBox>
+        <style.ButtonExtra>
+          <IconListCheck />
+          Todo List
+        </style.ButtonExtra>
+        <style.ButtonExtra>
+          <IconHourglassHigh />
+          Pomodoro
+        </style.ButtonExtra>
+        <style.ButtonExtra>
+          <IconAdjustmentsHorizontal />
+          Gestionar
+        </style.ButtonExtra>
+      </style.ButtonOptionsBox>
+
+      <style.TitleOptions>FUNCIONES</style.TitleOptions>
+
+      <style.ButtonOptionsBox>
+        <style.ButtonExtra>
+          <IconSquareRoundedPlus />
+          Agregar habito
+        </style.ButtonExtra>
       </style.ButtonOptionsBox>
     </style.OptionsNavStyles>
   )

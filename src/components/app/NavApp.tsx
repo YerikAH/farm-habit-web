@@ -1,5 +1,6 @@
 import { IconCalendarEvent, IconSettings, IconSun, IconMenu2 } from '@tabler/icons-react'
 import * as style from '../../styles/app/Nav/nav_page'
+import OptionsNav from './Navigation/OptionsNav'
 
 const NavApp = () => {
   return (
@@ -12,7 +13,7 @@ const NavApp = () => {
               Marzo 15, 2023
             </style.ListLink>
             <style.ListLink className='mobile'>
-              <IconMenu2 size={20}/>
+              <IconMenu2 size={20} />
             </style.ListLink>
           </style.ListStyle>
         </style.ListDesorder>
@@ -37,6 +38,7 @@ const NavApp = () => {
           </style.ListStyle>
         </style.ListDesorder>
       </style.NavPageStyles>
+      <OptionsNav />
     </style.HeaderPage>
   )
 }
