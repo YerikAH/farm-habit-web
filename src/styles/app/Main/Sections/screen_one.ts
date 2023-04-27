@@ -7,6 +7,8 @@ export const SreenOneStyles = styled.section`
   width: 100%;
   margin: 1rem 2rem 0 2rem;
   position: relative;
+  height: 100vh;
+  overflow: auto;
 `
 
 export const NoThereHabits = styled.div`
@@ -18,6 +20,7 @@ export const NoThereHabits = styled.div`
   margin: auto auto;
   display: grid;
   place-items: center;
+  height: fit-content;
 `
 export const HeadlineNoHabits = styled.h2`
   font: normal normal 700 1.2rem/1.25rem var(--font-primary);
@@ -30,4 +33,5 @@ export const TextBodyOne = styled.p`
   margin-top: 0.8rem;
   max-width: 21.875rem;
   width: 100%;
+  text-align: center;
 `
