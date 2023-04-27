@@ -1,4 +1,12 @@
-import { css } from 'styled-components'
+import { createGlobalStyle, css } from 'styled-components'
+
+
+
+export const GlobalStyles = createGlobalStyle`
+  body {
+    overflow: hidden;
+  }
+`
 
 export const HeadlinePrincipalGlobal = css`
   font: normal normal 900 1.5rem/2rem var(--font-primary);
