@@ -7,8 +7,8 @@ const Main = () => {
   return (
     <MainStyles>
       <DevelopersSection />
-      <ContributionSection/>
-      <Footer/>
+      <ContributionSection />
+      <Footer />
     </MainStyles>
   )
 }
