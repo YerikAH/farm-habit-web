@@ -66,6 +66,13 @@ export const ButtonSelect = styled.button`
   background: ${props => props.className === 'true' ? 'var(--blue)': 'transparent'};
   color: ${props => props.className === 'true' ? 'var(--white)': 'var(--black-50)'}
 `
+export const BoxFormDiv = styled.div``
+export const BoxButtonSelect = styled.div`
+  display: flex;
+  gap: 0.5rem;
+  justify-content: start;
+  align-items: center;
+`
 export const SelectOption = styled.button`
   position: relative;
   border: 1px solid var(--black-10)
