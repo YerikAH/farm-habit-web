@@ -14,10 +14,17 @@
   --white: #fff;
   --white-80: rgba(255, 255, 255, 0.8);
   --white-03: rgba(255, 255, 255, 0.03);
-  --red: #ff7070;
+  --red: #FF5757;
 
   /* app */
   --font-primary: 'Nunito Sans', sans-serif;
+
+  /* color app */
+  --gray-100: #E7E8EA;
+  --red-5: #FFF7F7;
+  --red-10: #FFE7E7;
+  --blue-5: #F6F9FF;
+  --blue-10: #E5EDFF;
 }
 
 #root {

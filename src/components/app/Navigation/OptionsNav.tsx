@@ -9,6 +9,7 @@ import {
   IconSquareRoundedPlus,
 } from '@tabler/icons-react'
 import * as style from '../../../styles/app/Nav/options_nav'
+import AddHabit from '../Main/modals/AddHabit'
 const OPTIONS_PAGE = [
   {
     id: 0,
@@ -75,6 +76,7 @@ const OptionsNav = () => {
           Agregar habito
         </style.ButtonExtra>
       </style.ButtonOptionsBox>
+      <AddHabit/>
     </style.OptionsNavStyles>
   )
 }

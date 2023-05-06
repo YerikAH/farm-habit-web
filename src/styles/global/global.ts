@@ -36,3 +36,10 @@ export const MainCenterGlobal = css`
   display: grid;
   place-items: center;
 `
+export const ButtonAppRepeat = css`
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  font: normal normal 400 0.8rem/1.2rem var(--font-primary);
+  display: grid;
+  place-items: center;
+`
