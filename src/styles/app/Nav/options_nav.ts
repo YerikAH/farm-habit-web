@@ -27,16 +27,18 @@ export const OptionsNavStyles = styled.nav`
   display: grid;
   gap: 2rem;
   padding: 1.5rem 2rem 3rem 2rem;
-  margin-top: 1.5rem;
   position: absolute;
   left: 0;
   overflow: auto;
   background-color: var(--white);
   place-content: start;
-  height: 90vh;
+  height: 100vh;
+  z-index: 500;
   @media (min-width: 720px) {
     max-width: 18.75rem;
+  height: 90vh;
     width: 100%;
+    margin-top: 1.5rem;
   }
 `
 export const ButtonOptionsBox = styled.div`

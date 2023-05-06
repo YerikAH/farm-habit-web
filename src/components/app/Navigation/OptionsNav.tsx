@@ -8,6 +8,7 @@ import {
   IconListCheck,
   IconSquareRoundedPlus,
 } from '@tabler/icons-react'
+import {useState} from 'react'
 import * as style from '../../../styles/app/Nav/options_nav'
 import AddHabit from '../Main/modals/AddHabit'
 const OPTIONS_PAGE = [
@@ -34,6 +35,8 @@ const OPTIONS_PAGE = [
   },
 ]
 const OptionsNav = () => {
+  const [addHabit, setAddHabit] = useState(false)
+  const handleClick = () => setAddHabit(!addHabit)
   return (
     <style.OptionsNavStyles>
       <style.ButtonOptionsBox>
@@ -71,12 +74,12 @@ const OptionsNav = () => {
       <style.TitleOptions>FUNCIONES</style.TitleOptions>
 
       <style.ButtonOptionsBox>
-        <style.ButtonExtra>
+        <style.ButtonExtra onClick={handleClick}>
           <IconSquareRoundedPlus />
           Agregar habito
         </style.ButtonExtra>
       </style.ButtonOptionsBox>
-      <AddHabit/>
+      <AddHabit modal={addHabit} setModal={setAddHabit}/>
     </style.OptionsNavStyles>
   )
 }

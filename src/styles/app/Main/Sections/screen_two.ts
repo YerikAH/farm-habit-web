@@ -4,6 +4,7 @@ export const NavigationScreenTwo = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 4rem;
 `
 export const FilterButton = styled.button`
   display: flex;

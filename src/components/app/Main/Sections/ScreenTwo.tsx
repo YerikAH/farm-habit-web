@@ -1,4 +1,10 @@
+import * as style from '../../../../styles/app/Main/Sections/screen_two'
+import NavScreenTwo from '../ui/NavScreenTwo'
 const ScreenTwo = () => {
-  return ()
+  return (
+    <>
+      <NavScreenTwo/>
+    </>
+  )
 }
 export default ScreenTwo

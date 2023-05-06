@@ -2,12 +2,23 @@ import ReactDOM from 'react-dom'
 import { elementHtmlSelect } from '../../../../helpers/helpers'
 import * as style from '../../../../styles/app/Main/modals/ad_ed_modal'
 import { IconX, IconChevronDown } from '@tabler/icons-react'
-const AddHabit = () => {
+import { ModalProps } from '../../../../interface/props'
+import { useEffect, useState } from 'react'
+const AddHabit = ({ modal, setModal }: ModalProps) => {
   const elementHTML = document.getElementById('add')
+  const [styles, setStyles] = useState('modal-no-active')
+  const handleClick = () => setModal(!modal)
+  useEffect(() => {
+    if (modal) {
+      setStyles('active')
+    } else {
+      setStyles('modal-no-active')
+    }
+  }, [modal])
   return ReactDOM.createPortal(
-    <style.AdEdModal>
+    <style.AdEdModal className={styles}>
       <style.Modal>
-        <style.ButtonClose>
+        <style.ButtonClose onClick={handleClick}>
           <IconX />
         </style.ButtonClose>
         <style.HeadlinePrincipal>Agregar hábito</style.HeadlinePrincipal>

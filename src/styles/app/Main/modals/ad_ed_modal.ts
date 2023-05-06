@@ -11,7 +11,11 @@ export const AdEdModal = styled.div`
   place-items: center;
   z-index: 1000;
   backdrop-filter: blur(10px);
-
+  transition: 0.3s;
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  padding: 2rem;
+  opacity: ${props => props.className === 'active' ? '1' : '0'};
+  visibility: ${props => props.className === 'active' ? 'visible' : 'hidden'} 
 `
 export const Modal = styled.div`
   background-color: var(--white-80);
