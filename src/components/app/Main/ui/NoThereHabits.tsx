@@ -12,3 +12,4 @@ const NoThereHabits = () => {
     </style.NoThereHabits>
   )
 }
+export default NoThereHabits
