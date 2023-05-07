@@ -1,5 +1,5 @@
 import { IconSearch, IconSortDescending } from '@tabler/icons-react'
-import * as style from '../../../../styles/app/Main/Sections/screen_two'
+import * as style from '../../../../styles/app/Main/Sections/ui/navigation_screen'
 
 const NavScreenOne = () => {
   return (

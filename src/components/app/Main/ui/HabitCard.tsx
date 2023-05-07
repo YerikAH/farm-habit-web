@@ -1,5 +1,5 @@
 import { IconBrain, IconDotsVertical } from '@tabler/icons-react'
-import * as style from '../../../../styles/app/Main/Sections/screen_two'
+import * as style from '../../../../styles/app/Main/Sections/ui/habit_card'
 
 const HabitCard = () => {
   return (
