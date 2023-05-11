@@ -15,6 +15,7 @@ export const Headline = styled.h2`
   color: var(--black-100);
   margin-top: 1rem;
 `
+  
 export const TextBodyOne = styled.p`
   font: normal normal 400 1rem/1.1rem var(--font-primary);
   color: var(--black-50);
@@ -23,3 +24,4 @@ export const TextBodyOne = styled.p`
   width: 100%;
   text-align: center;
 `
+
