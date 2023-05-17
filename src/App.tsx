@@ -2,8 +2,8 @@ import { Route, Routes, useLocation } from 'react-router-dom'
 import { PathRoutes } from './enum/enum'
 import WebPage from './pages/WebPage'
 import DevPage from './pages/DevPage'
-import Error404 from './components/webpage/Error/Error404'
-import StillWork from './components/webpage/StillWork/StillWork'
+import Error404 from './pages/Error404'
+import StillWork from './pages/StillWork'
 import AppPage from './pages/AppPage'
 
 function App() {

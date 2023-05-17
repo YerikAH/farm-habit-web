@@ -1,5 +1,6 @@
 import { FeaturesOptions, InterfaceDesktopImages } from '../interface/interface'
 import { AllFeatures } from '../enum/enum'
+import { regexEmail } from '../regex/regex'
 
 export function elementHtmlSelect(selectHTML: HTMLElement | null, idName: string): HTMLElement {
   if (selectHTML !== null) return document.getElementById(idName) as HTMLElement
@@ -12,7 +13,7 @@ export function elementHtmlSelect(selectHTML: HTMLElement | null, idName: string
   return menuDom
 }
 
-export function changeTrueValue(obj: FeaturesOptions[], myVar: AllFeatures): FeaturesOptions[] {
+export function changeTrueValue(obj: unknown[], myVar: AllFeatures): FeaturesOptions[] {
   obj = obj.map((o) => {
     if (o.active === true) {
       return { ...o, active: false }
@@ -24,6 +25,7 @@ export function changeTrueValue(obj: FeaturesOptions[], myVar: AllFeatures): Fea
 
   return obj
 }
+
 export const order = (
   arr: InterfaceDesktopImages[],
   starti: number,
@@ -36,7 +38,6 @@ export const order = (
 }
 
 export function verifyEmail(value: string) {
-  const regexEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
   if (!regexEmail.test(value)) {
     return false
   } else if (value.length <= 5) {
@@ -44,4 +45,34 @@ export function verifyEmail(value: string) {
   } else {
     return true
   }
+}
+
+export function addPMorAM(time: string): string {
+  const hourTime = parseInt(time.slice(0, 2))
+  if (hourTime >= 12) return time + ' P.M'
+  return time + ' A.M'
+}
+
+export function getFormattedDate(): string {
+  const months = [
+    'Enero',
+    'Febrero',
+    'Marzo',
+    'Abril',
+    'Mayo',
+    'Junio',
+    'Julio',
+    'Agosto',
+    'Septiembre',
+    'Octubre',
+    'Noviembre',
+    'Diciembre',
+  ]
+  const currentDate = new Date()
+  const month = months[currentDate.getMonth()]
+  const day = currentDate.getDate()
+  const year = currentDate.getFullYear()
+
+  const formattedDate = `${month} ${day}, ${year}`
+  return formattedDate
 }

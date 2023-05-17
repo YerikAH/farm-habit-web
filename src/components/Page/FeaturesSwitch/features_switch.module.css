@@ -1,0 +1,70 @@
+.features_grid {
+  display: grid;
+  max-width: 55rem;
+  width: 100%;
+  margin-top: 3rem;
+}
+.features_grid_one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.features_grid_one_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-width: 20.25rem;
+}
+.features_grid_two {
+  display: grid;
+  place-items: start;
+  max-width: 23.75rem;
+  width: 100%;
+  height: 100%;
+  margin-top: 4rem;
+}
+.features_grid_two_button {
+  width: 100%;
+  border-radius: 1rem;
+  border: none;
+  padding: 1rem;
+  text-align: left;
+}
+.features_grid_two_button_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.features_grid_two_button_box_title {
+  display: flex;
+  gap: 0.5rem;
+}
+.features_grid_two_button_box_title_text {
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 12rem;
+  font: normal normal 700 1rem/1.5rem var(--font-primary);
+}
+.features_grid_two_button_description{
+  font: normal normal 400 0.8rem/1rem var(--font-primary);
+  color: var(--blue);
+  text-align: left;
+  margin-top: 0.5rem;
+}
+@media (min-width: 900px) {
+  .features_grid {
+    grid-template-columns: auto auto;
+  }
+}
+@media (min-width: 900px) {
+  .features_grid_two {
+    margin-top: 0;
+  }
+}
+@media (min-width: 370px) {
+  .features_grid_two_button_box_title_text {
+    max-width: 17rem;
+  }
+}

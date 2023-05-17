@@ -1,13 +1,23 @@
-import Footer from '../components/webpage/Footer/Footer'
-import Main from '../components/webpage/Main/Main'
-import Navigation from '../components/webpage/Nav/Navigation'
+import DecorationFooter from '../components/Page/DecorationFooter/DecorationFooter'
+import FeaturesSection from '../components/Page/FeaturesSection/FeaturesSection'
+import HeroSection from '../components/Page/HeroSection/HeroSection'
+import KnowInterface from '../components/Page/KnowInterface/KnowInterface'
+import Navigation from '../components/Page/Navigation/Navigation'
+import SampleFooter from '../components/Page/SampleFooter/SampleFooter'
 
 const WebPage = () => {
   return (
     <>
       <Navigation />
-      <Main />
-      <Footer />
+      <main className='main_page'>
+        <HeroSection/>
+        <KnowInterface/>
+        <FeaturesSection/>
+      </main>
+      <footer>
+        <DecorationFooter/>
+        <SampleFooter />
+      </footer>
     </>
   )
 }

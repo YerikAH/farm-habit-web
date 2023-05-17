@@ -1,0 +1,23 @@
+.image_responsive{
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 0.3s;
+}
+
+.image_responsive--2 {
+  width: 200px !important;
+  height: 430px !important;
+}
+
+.image_responsive--1,
+.image_responsive--3 {
+  width: 175px !important;
+  height: 378px !important;
+}
+
+.image_responsive {
+  width: 145px !important;
+  height: 313px !important;
+}

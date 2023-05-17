@@ -1,5 +1,5 @@
-import Main from '../components/app/Main/Main'
-import NavApp from '../components/app/NavApp'
+import Main from '../components/App/Main/Main'
+import NavApp from '../components/App/NavApp/NavApp'
 
 const AppPage = () => {
   return (

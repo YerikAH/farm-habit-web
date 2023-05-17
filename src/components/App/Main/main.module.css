@@ -1,0 +1,14 @@
+.main {
+  display: flex;
+}
+.main_section {
+  display: none;
+}
+@media (min-width: 720px) {
+  .main_section {
+    display: block;
+    width: 100%;
+    max-width: 18.75rem;
+    height: 100%;
+  }
+}
