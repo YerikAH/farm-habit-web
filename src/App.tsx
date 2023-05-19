@@ -5,6 +5,7 @@ import DevPage from './pages/DevPage'
 import Error404 from './pages/Error404'
 import StillWork from './pages/StillWork'
 import AppPage from './pages/AppPage'
+import TestPage from './pages/TestPage'
 
 function App() {
   const location = useLocation()
@@ -12,9 +13,10 @@ function App() {
     <Routes location={location}>
       <Route path={PathRoutes.webpage} element={<WebPage />} />
       <Route path={PathRoutes.developers} element={<DevPage />} />
-      <Route path="*" element={<Error404 />} />
-      <Route path={PathRoutes.work} element={<StillWork/>}/>
-      <Route path={PathRoutes.app} element={<AppPage/>}/>
+      <Route path={PathRoutes.work} element={<StillWork />} />
+      <Route path={PathRoutes.app} element={<AppPage />} />
+      <Route path={PathRoutes.test} element={<TestPage />} />
+      <Route path='*' element={<Error404 />} />
     </Routes>
   )
 }

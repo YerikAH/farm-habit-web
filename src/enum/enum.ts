@@ -3,5 +3,5 @@ export enum PathRoutes {
   developers = '/developers',
   work = '/work',
   app = '/app',
+  test = '/test',
 }
-
