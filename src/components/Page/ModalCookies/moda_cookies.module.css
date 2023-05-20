@@ -1,0 +1,39 @@
+.screen {
+  position: fixed;
+  width: 100vw;
+  left: 0;
+  z-index: 600;
+  padding: 0 2rem;
+}
+.screen_modal {
+  max-width: 1000px;
+  width: 100%;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+.screen_modal-text {
+  font: normal normal 500 0.8rem/500 var(--font-primary);
+  color: var(--black-100);
+}
+.screen_modal__button {
+  border: none;
+  border-radius: 0.5rem;
+  display: grid;
+  place-items: center;
+  padding: 0.5rem 2rem;
+  color: var(--white);
+  background-color: var(--blue);
+}
+@media (min-width: 720px) {
+  .screen_modal {
+    justify-content: space-between;
+  }
+  .screen_modal-text {
+    font-size: 1rem;
+  }
+}

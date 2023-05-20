@@ -1,0 +1,26 @@
+.tryapp {
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  margin-top: 7rem;
+  padding: 5rem 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.tryapp_card {
+  display: grid;
+  padding: 1rem 2rem;
+  max-width: 15rem;
+  width: 100%;
+  border-radius: 1rem;
+}
+.tryapp_card img {
+  width: 5rem;
+  height: auto;
+}
+.tryapp_card h3 {
+  font: normal normal 600 1rem/1.2rem var(--font-primary);
+}
+.tryapp_card ul {
+  display: grid;
+}
