@@ -4,6 +4,7 @@ import HeroSection from '../components/Page/HeroSection/HeroSection'
 import KnowInterface from '../components/Page/KnowInterface/KnowInterface'
 import Navigation from '../components/Page/Navigation/Navigation'
 import SampleFooter from '../components/Page/SampleFooter/SampleFooter'
+import TryAppSection from '../components/Page/TryAppSection/TryAppSection'
 
 const WebPage = () => {
   return (
@@ -13,6 +14,7 @@ const WebPage = () => {
         <HeroSection/>
         <KnowInterface/>
         <FeaturesSection/>
+        <TryAppSection/>
       </main>
       <footer>
         <DecorationFooter/>
