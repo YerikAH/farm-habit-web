@@ -1,5 +1,4 @@
 import { FeaturesOptions, InterfaceDesktopImages } from '../interface/interface'
-import { AllFeatures } from '../enum/enum'
 import { regexEmail } from '../regex/regex'
 
 export function elementHtmlSelect(selectHTML: HTMLElement | null, idName: string): HTMLElement {
@@ -13,14 +12,14 @@ export function elementHtmlSelect(selectHTML: HTMLElement | null, idName: string
   return menuDom
 }
 
-export function changeTrueValue(obj: unknown[], myVar: AllFeatures): FeaturesOptions[] {
-  obj = obj.map((o) => {
+export function changeTrueValue(obj: unknown[], myVar: string): FeaturesOptions[] {
+  obj = obj.map(o => {
     if (o.active === true) {
       return { ...o, active: false }
     }
     return o
   })
-  const index = obj.findIndex((o) => o.feature === myVar)
+  const index = obj.findIndex(o => o.name === myVar)
   obj[index] = { ...obj[index], active: true }
 
   return obj
