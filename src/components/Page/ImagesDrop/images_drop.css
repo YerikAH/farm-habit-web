@@ -1,0 +1,10 @@
+.webpage_image_responsive--1,
+.webpage_image_responsive--3 {
+  width: 175px !important;
+  height: 378px !important;
+}
+
+.webpage_image_responsive--2 {
+  width: 200px !important;
+  height: 430px !important;
+}
