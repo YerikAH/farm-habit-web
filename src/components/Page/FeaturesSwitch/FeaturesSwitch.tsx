@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { IconChevronDown } from '@tabler/icons-react'
 import { AllFeatures, FEATURES_CONST, FeaturesOptions } from './features_switch'
-import { changeTrueValue } from '../../../helpers/helpers'
 import s from './features_switch.module.css'
 
 const FeaturesSwitch = () => {
@@ -9,6 +8,19 @@ const FeaturesSwitch = () => {
   const handleChangeFeature = (name: AllFeatures) => {
     const newValue: FeaturesOptions[] = changeTrueValue(features, name)
     setFeatures(newValue)
+  }
+
+  function changeTrueValue(obj: FeaturesOptions[], myVar: AllFeatures): FeaturesOptions[] {
+    obj = obj.map((o) => {
+      if (o.active === true) {
+        return { ...o, active: false }
+      }
+      return o
+    })
+    const index = obj.findIndex((o) => o.feature === myVar)
+    obj[index] = { ...obj[index], active: true }
+
+    return obj
   }
 
   return (
