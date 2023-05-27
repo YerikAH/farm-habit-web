@@ -11,17 +11,6 @@ export function elementHtmlSelect(selectHTML: HTMLElement | null, idName: string
   return menuDom
 }
 
-export const order = (
-  arr: InterfaceDesktopImages[],
-  starti: number,
-  endi: number,
-): InterfaceDesktopImages[] => {
-  const result = [...arr]
-  const [removed] = result.splice(starti, 1)
-  result.splice(endi, 0, removed)
-  return result
-}
-
 export function verifyEmail(value: string) {
   if (!regexEmail.test(value)) {
     return false

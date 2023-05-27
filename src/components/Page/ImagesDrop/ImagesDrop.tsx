@@ -1,12 +1,21 @@
 import { DragDropContext, Draggable, Droppable } from 'react-beautiful-dnd'
 import { useState } from 'react'
-import { order } from '../../../helpers/helpers'
 import { IMAGES_DESKTOP, InterfaceDesktopImages } from './images_drop'
 import s from './images_drop.module.css'
 import './images_drop.css'
 
 const ImagesDrop = () => {
   const [images, setImages] = useState<InterfaceDesktopImages[]>(IMAGES_DESKTOP)
+  const order = (
+    arr: InterfaceDesktopImages[],
+    starti: number,
+    endi: number,
+  ): InterfaceDesktopImages[] => {
+    const result = [...arr]
+    const [removed] = result.splice(starti, 1)
+    result.splice(endi, 0, removed)
+    return result
+  }
   return (
     <DragDropContext
       // eslint-disable-next-line no-console
