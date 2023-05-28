@@ -1,3 +1,4 @@
+import { IconCheck, IconX } from '@tabler/icons-react'
 import { DEVICES, TITLE, TEXT } from './try_app_section'
 import s from './try_app_section.module.css'
 
@@ -9,12 +10,34 @@ const TryAppSection = () => {
       <div className={s.tryapp_cards}>
         {DEVICES.map((item) => (
           <div className={s.tryapp_card} key={item.id}>
-            <img src={item.image} alt={item.device} />
+            <div className={s.tryapp_card_image}>
+              <img src={item.image} alt={item.device} />
+            </div>
             <h3>{item.device}</h3>
             <ul>
-              <li></li>
+              {item.available.map((item, idx) => (
+                <li key={idx}>
+                  <span>
+                    <IconCheck />
+                  </span>
+                  <span>{item}</span>
+                </li>
+              ))}
             </ul>
-            <button>Descargar aplicación</button>
+            <ul>
+              {item.noAvilable.map((item, idx) => (
+                <li key={idx}>
+                  <span>
+                    <IconX />
+                  </span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+            <button>
+              {item.icon}
+              {item.button}
+            </button>
           </div>
         ))}
       </div>
