@@ -1,3 +1,4 @@
+export const TITLE = 'Prueba nuestra aplicación'
 export const DEVICES = [
   {
     id: 0,
