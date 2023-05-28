@@ -1,4 +1,4 @@
-export const ImageAndroid = () => {
+const ImageAndroid = () => {
   return (
     <svg
       width='86'
@@ -14,3 +14,4 @@ export const ImageAndroid = () => {
     </svg>
   )
 }
+export default ImageAndroid

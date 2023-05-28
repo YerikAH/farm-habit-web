@@ -7,6 +7,27 @@
   justify-content: center;
   align-items: center;
 }
+.tryapp_title {
+  padding: 0 2rem;
+  max-width: 50rem;
+  font: normal normal 900 1.5rem/2rem var(--font-primary);
+  color: var(--black-100);
+  text-align: center;
+}
+.tryapp_text {
+  font: normal normal 400 0.8rem/1rem var(--font-primary);
+  color: var(--black-70);
+  text-align: center;
+  margin-top: 2rem;
+  padding: 0 2rem;
+  max-width: 50rem;
+}
+.tryapp_cards {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  justify-content: space-between;
+}
 .tryapp_card {
   display: grid;
   padding: 1rem 2rem;

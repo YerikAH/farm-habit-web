@@ -1,4 +1,4 @@
-export const ImageGoogle = () => {
+const ImageGoogle = () => {
   return (
     <svg
       width='101'
@@ -30,3 +30,4 @@ export const ImageGoogle = () => {
     </svg>
   )
 }
+export default ImageGoogle
