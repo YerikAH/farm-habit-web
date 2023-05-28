@@ -26,7 +26,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
   gap: 1rem;
   padding: 0 2rem;
   transition: 0.3s;

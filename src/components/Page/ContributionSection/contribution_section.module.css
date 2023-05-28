@@ -5,7 +5,6 @@
   justify-content: center;
   overflow: hidden;
   width: 100%;
-  margin: 10rem 0 0 0;
   flex-direction: column;
 }
 .section div {
@@ -21,20 +20,17 @@
   width: 100%;
   height: 100%;
   background-color: rgba(54, 61, 79, 0.7);
-  backdrop-filter: blur(1px);
+  backdrop-filter: blur(3px);
 }
 .section_bg {
   position: absolute;
-  top: auto;
-  left: 0;
-  transform: translateZ(-1px) scale(1.5);
-  background-size: 100%;
-  z-index: -1;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('../../../assets/bg_contribution.png');
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 100vh;
 }
 .section_content {
   width: 100%;
