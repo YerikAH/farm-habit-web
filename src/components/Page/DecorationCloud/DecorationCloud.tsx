@@ -1,5 +1,6 @@
 import CircleDecoration from '../CircleDecoration/CircleDecoration'
 import s from './decoration_cloud.module.css'
+import './decoration_cloud.css'
 
 const DecorationCloud = () => {
   return (
