@@ -1,5 +1,5 @@
-import android from '../../../assets/images/ImageAndroid'
-import google from '../../../assets/images/ImageGoogle'
+import android from '../../../assets/android.jpg'
+import google from '../../../assets/google.jpg'
 
 export const TITLE = 'Prueba nuestra aplicación'
 export const TEXT =
