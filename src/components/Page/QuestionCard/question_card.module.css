@@ -1,0 +1,27 @@
+.card {
+  width: 100%;
+  position: relative;
+}
+.card_title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card h6 {
+  font: normal normal 600 1.2rem/1.5rem var(--font-primary);
+  color: var(--black-100);
+}
+.card button {
+  border: none;
+  border-radius: 3rem;
+  display: flex;
+  place-items: center;
+}
+.card svg {
+  stroke: var(--blue);
+}
+.card p {
+  font: normal normal 400 1rem/1.2rem var(--font-primary);
+  color: var(--black-70);
+}
