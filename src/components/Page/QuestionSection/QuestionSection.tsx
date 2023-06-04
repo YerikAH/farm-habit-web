@@ -1,3 +1,5 @@
+import QuestionCard from '../QuestionCard/QuestionCard'
+import { QUESTIONS } from './question_section'
 import s from './question_section.module.css'
 
 const QuestionSection = () => {
@@ -8,7 +10,11 @@ const QuestionSection = () => {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi erat mi, tincidunt vitae
         risus sit amet, ultricies pretium ante.{' '}
       </p>
-      <div className={s.section_question}></div>
+      <div className={s.section_question}>
+        {QUESTIONS.map((item, idx) => (
+          <QuestionCard text={item.text} title={item.title} key={idx} />
+        ))}
+      </div>
     </section>
   )
 }
