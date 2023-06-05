@@ -6,7 +6,7 @@ const QuestionSection = () => {
   return (
     <section className={s.section}>
       <h2>Preguntas Frecuentes</h2>
-      <p>
+      <p className={s.section_text}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi erat mi, tincidunt vitae
         risus sit amet, ultricies pretium ante.{' '}
       </p>
