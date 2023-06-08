@@ -14,17 +14,17 @@
   --white: #fff;
   --white-80: rgba(255, 255, 255, 0.8);
   --white-03: rgba(255, 255, 255, 0.03);
-  --red: #FF5757;
+  --red: #ff5757;
 
   /* app */
   --font-primary: 'Nunito Sans', sans-serif;
 
   /* color app */
-  --gray-100: #E7E8EA;
-  --red-5: #FFF7F7;
-  --red-10: #FFE7E7;
-  --blue-5: #F6F9FF;
-  --blue-10: #E5EDFF;
+  --gray-100: #e7e8ea;
+  --red-5: #fff7f7;
+  --red-10: #ffe7e7;
+  --blue-5: #f6f9ff;
+  --blue-10: #e5edff;
 }
 
 #root {
@@ -34,16 +34,19 @@
 }
 
 /* styles global */
-.main_page{
+.main_page {
   width: 100vw;
   display: grid;
   place-items: center;
   position: relative;
 }
 
-
 /* transition default */
-svg{
+svg {
   transition: 0.3s;
   transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
+
+/* TODO: 
+  - Add local font
+*/
