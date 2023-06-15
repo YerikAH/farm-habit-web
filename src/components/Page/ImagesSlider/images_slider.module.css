@@ -2,4 +2,5 @@
   object-fit: contain;
   transition: 0.3s;
   margin: 0px auto;
+  width: 200px;
 }
