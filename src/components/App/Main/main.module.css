@@ -1,5 +1,10 @@
 .main {
   display: flex;
+  height: 100vh;
+  gap: 3rem;
+  padding-top: 6rem;
+  position: relative;
+  z-index: 200;
 }
 .main_section {
   display: none;

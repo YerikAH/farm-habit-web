@@ -43,7 +43,7 @@ const OptionsNav = () => {
 
       <div className={s.nav_div}>
         {FUNCTIONS_APP.map((item) => (
-          <button key={item.id} className={`${s.button} ${s['s.nav_div--extra']}`} onClick={handleClick}>
+          <button key={item.id} className={`${s.button} ${s['nav_div--extra']}`} onClick={handleClick}>
             {item.icon}
             {item.name}
           </button>
