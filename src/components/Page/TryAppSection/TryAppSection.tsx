@@ -1,12 +1,12 @@
 import { IconCheck, IconX } from '@tabler/icons-react'
 import { DEVICES, TITLE, TEXT } from './try_app_section'
 import s from './try_app_section.module.css'
+import SectionWithDescription from '../shared/SectionWithDescription/SectionWithDescription'
 
 const TryAppSection = () => {
   return (
     <section className={s.tryapp}>
-      <h2 className={s.tryapp_title}>{TITLE}</h2>
-      <p className={s.tryapp_text}>{TEXT}</p>
+      <SectionWithDescription title={TITLE} description={TEXT}/>
       <div className={s.tryapp_cards}>
         {DEVICES.map((item) => (
           <div className={s.tryapp_card} key={item.id}>
