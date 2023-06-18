@@ -5,7 +5,6 @@ import google from '../../../assets/google.jpg'
 export const TITLE = 'Prueba nuestra aplicación'
 export const TEXT =
   'Optimiza tu tiempo y logra tus objetivos con nuestra aplicación de productividad diseñada para el éxito personal'
-
 export const DEVICES = [
   {
     id: 0,

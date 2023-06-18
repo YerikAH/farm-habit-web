@@ -1,45 +1,14 @@
-import { IconCheck, IconX } from '@tabler/icons-react'
 import { DEVICES, TITLE, TEXT } from './try_app_section'
 import s from './try_app_section.module.css'
 import SectionWithDescription from '../shared/SectionWithDescription/SectionWithDescription'
+import CardDevices from '../CardDevices/CardDevices'
 
 const TryAppSection = () => {
   return (
     <section className={s.tryapp}>
-      <SectionWithDescription title={TITLE} description={TEXT}/>
+      <SectionWithDescription title={TITLE} description={TEXT} />
       <div className={s.tryapp_cards}>
-        {DEVICES.map((item) => (
-          <div className={s.tryapp_card} key={item.id}>
-            <div className={s.tryapp_card_image}>
-              <img src={item.image} alt={item.device} />
-            </div>
-            <h3>{item.device}</h3>
-            <ul>
-              {item.available.map((item, idx) => (
-                <li key={idx}>
-                  <span>
-                    <IconCheck />
-                  </span>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-            <ul>
-              {item.noAvilable.map((item, idx) => (
-                <li key={idx}>
-                  <span>
-                    <IconX />
-                  </span>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-            <button>
-              {item.icon}
-              {item.button}
-            </button>
-          </div>
-        ))}
+        <CardDevices DEVICES={DEVICES} />
       </div>
     </section>
   )
