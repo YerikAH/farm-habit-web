@@ -23,7 +23,7 @@ const MenuMobile = ({ menu, setMenu }: MenuMobileInterface) => {
           </button>
         </div>
         <ul className={s.menu_mobile_center_ul}>
-          {MENU_CONTANT.map((item) => (
+          {MENU_CONTANT.map(item => (
             <li className={s.menu_mobile_center_ul_li} key={item.id}>
               <Link className={s.menu_mobile_center_ul_li_a} to={item.path}>
                 {item.icon}

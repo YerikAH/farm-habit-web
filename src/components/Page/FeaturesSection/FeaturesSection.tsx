@@ -7,7 +7,7 @@ const FeaturesSection = () => {
   return (
     <section className={s.section}>
       <div className={s.section_bg}>
-        <SectionWithDescription title={TITLE} description={TEXT}/>
+        <SectionWithDescription title={TITLE} description={TEXT} />
         <FeaturesSwitch />
       </div>
     </section>

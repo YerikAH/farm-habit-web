@@ -47,7 +47,7 @@
   max-width: 12rem;
   font: normal normal 700 1rem/1.5rem var(--font-primary);
 }
-.features_grid_two_button_description{
+.features_grid_two_button_description {
   font: normal normal 400 0.8rem/1rem var(--font-primary);
   color: var(--blue);
   text-align: left;

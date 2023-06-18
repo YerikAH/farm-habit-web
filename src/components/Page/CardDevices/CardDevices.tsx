@@ -4,7 +4,7 @@ import { IconCheck, IconX } from '@tabler/icons-react'
 interface Props {
   DEVICES: Device[]
 }
-interface Device{
+interface Device {
   id: number
   device: string
   image: string
@@ -14,7 +14,7 @@ interface Device{
   button: string
 }
 
-const CardDevices = ({DEVICES}: Props) => { 
+const CardDevices = ({ DEVICES }: Props) => {
   return (
     <>
       {DEVICES.map(item => (

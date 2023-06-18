@@ -5,9 +5,9 @@ import appTwo from '../../../assets/app_2.png'
 import appOne from '../../../assets/app_1.png'
 
 export interface InterfaceDesktopImages {
-  id: number,
+  id: number
   image: string
-  index:number
+  index: number
 }
 
 export const IMAGES_DESKTOP: InterfaceDesktopImages[] = [
@@ -37,4 +37,3 @@ export const IMAGES_DESKTOP: InterfaceDesktopImages[] = [
     index: 1,
   },
 ]
-

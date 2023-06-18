@@ -1,4 +1,4 @@
-.sample_footer{
+.sample_footer {
   width: 100%;
   max-width: 1200px;
   display: grid;
@@ -8,22 +8,22 @@
   padding: 3rem 0px;
   border-top: 1px solid var(--black-100);
 }
-.sample_footer_link{
+.sample_footer_link {
   opacity: 0.8;
   transition: 0.3s;
 }
-.sample_footer_text{
+.sample_footer_text {
   font: normal normal 400 0.8rem/1rem var(--font-primary);
   text-align: center;
   color: var(--black-100);
   margin-top: 1rem;
   font-weight: 600 !important;
 }
-.sample_footer_link:hover{
+.sample_footer_link:hover {
   opacity: 1;
 }
 @media (min-width: 720px) {
-  .sample_footer_text{
+  .sample_footer_text {
     font: normal normal 400 1rem/1.2rem var(--font-primary);
   }
 }

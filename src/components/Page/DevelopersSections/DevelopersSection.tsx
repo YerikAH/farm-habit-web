@@ -9,9 +9,7 @@ const DevelopersSection = () => {
       <CircleDecoration orientation='left' />
       <CircleDecoration />
       <h1 className={s.section_title}>{TITLE}</h1>
-      <p className={s.section_text}>
-        {TEXT}
-      </p>
+      <p className={s.section_text}>{TEXT}</p>
       <CardDevelopers />
     </section>
   )

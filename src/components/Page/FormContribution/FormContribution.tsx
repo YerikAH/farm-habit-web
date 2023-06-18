@@ -1,9 +1,5 @@
 import { useState } from 'react'
-import {
-  FORM_ERROR_EMAIL,
-  FORM_ERROR_LITTLE,
-  FORM_ERROR_VOID,
-} from './form_contribution'
+import { FORM_ERROR_EMAIL, FORM_ERROR_LITTLE, FORM_ERROR_VOID } from './form_contribution'
 import { regexEmail } from '../../../regex/regex'
 import s from './form_contribution.module.css'
 
@@ -21,7 +17,6 @@ const FormContribution = () => {
   }
 
   function validateEmail(value: string) {
-    
     // eslint-disable-next-line prefer-const
     let errorObj = {
       message: '',
@@ -49,12 +44,12 @@ const FormContribution = () => {
         name='message'
         type='email'
         value={inputEmail}
-        onChange={(e) => handleChange(e)}
+        onChange={e => handleChange(e)}
         required
       />
       {errorState.state && <span className={s.form_span}>{errorState.message}</span>}
       <button
-      className={s.form_button}
+        className={s.form_button}
         type='submit'
         disabled={errorState.state}
         onClick={() => validateEmail(inputEmail)}

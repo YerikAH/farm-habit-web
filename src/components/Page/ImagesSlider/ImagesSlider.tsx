@@ -13,7 +13,7 @@ const ImagesSlider = () => {
       slidesPerView={1}
       scrollbar={{ draggable: true }}
     >
-      {IMAGES_DESKTOP.map((item,idx) => (
+      {IMAGES_DESKTOP.map((item, idx) => (
         <SwiperSlide key={idx}>
           <img className={s.image_slider} src={item.image} alt='image preview' />
         </SwiperSlide>

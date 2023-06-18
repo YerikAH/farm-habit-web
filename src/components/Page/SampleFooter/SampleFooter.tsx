@@ -9,7 +9,7 @@ const SampleFooter = () => {
       <a href={GITHUB} className={s.sample_footer_link}>
         <IconGithub />
       </a>
-      <p className={s.sample_footer_text}>{ TEXT }</p>
+      <p className={s.sample_footer_text}>{TEXT}</p>
     </div>
   )
 }

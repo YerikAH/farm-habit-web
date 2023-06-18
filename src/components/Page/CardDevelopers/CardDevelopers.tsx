@@ -6,9 +6,9 @@ import s from './card_developers.module.css'
 const CardDevelopers = () => {
   return (
     <div className={s.card}>
-      {DEVELOPER_LIST.map((item) => (
+      {DEVELOPER_LIST.map(item => (
         <div className={s.card_dev} key={item.id}>
-          <img src={item.image} alt='developer' className={s.card_dev_image}/>
+          <img src={item.image} alt='developer' className={s.card_dev_image} />
           <p className={s.card_dev_name}>{item.name}</p>
           <p className={s.card_dev_job}>{item.job}</p>
           <div className={s.card_dev_buttons}>

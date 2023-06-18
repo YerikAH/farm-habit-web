@@ -19,20 +19,20 @@ const ImagesDrop = () => {
   return (
     <DragDropContext
       // eslint-disable-next-line no-console
-      onDragEnd={(result) => {
+      onDragEnd={result => {
         const { source, destination } = result
         if (!destination) return
         if (source.index === destination.index && source.droppableId === destination.droppableId)
           return
-        setImages((image) => order(image, source.index, destination.index))
+        setImages(image => order(image, source.index, destination.index))
       }}
     >
       <Droppable droppableId='images' direction='horizontal'>
-        {(droppableProvided) => (
+        {droppableProvided => (
           <div {...droppableProvided.droppableProps} ref={droppableProvided.innerRef}>
             {images.map((item, idx) => (
               <Draggable key={item.id} draggableId={`${item.id}`} index={idx}>
-                {(draggableProvided) => (
+                {draggableProvided => (
                   <div
                     {...draggableProvided.draggableProps}
                     {...draggableProvided.dragHandleProps}

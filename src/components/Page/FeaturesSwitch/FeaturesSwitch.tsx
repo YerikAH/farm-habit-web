@@ -11,13 +11,13 @@ const FeaturesSwitch = () => {
   }
 
   function changeTrueValue(obj: FeaturesOptions[], myVar: AllFeatures): FeaturesOptions[] {
-    obj = obj.map((o) => {
+    obj = obj.map(o => {
       if (o.active === true) {
         return { ...o, active: false }
       }
       return o
     })
-    const index = obj.findIndex((o) => o.feature === myVar)
+    const index = obj.findIndex(o => o.feature === myVar)
     obj[index] = { ...obj[index], active: true }
 
     return obj
@@ -26,10 +26,10 @@ const FeaturesSwitch = () => {
   return (
     <div className={s.features_grid}>
       <div className={s.features_grid_one}>
-        <img src={features.find((item) => item.active === true)?.image} alt='feature app' />
+        <img src={features.find(item => item.active === true)?.image} alt='feature app' />
       </div>
       <div className={s.features_grid_two}>
-        {features.map((item) => (
+        {features.map(item => (
           <button
             key={item.id}
             style={{ backgroundColor: item.active ? 'var(--blue-5)' : 'transparent' }}

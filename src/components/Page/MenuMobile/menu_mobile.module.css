@@ -13,7 +13,7 @@
 .menu_mobile--active {
   right: -13.5625rem;
 }
-.menu_mobile_center{
+.menu_mobile_center {
   position: relative;
   padding: 1rem;
   display: flex;
@@ -21,28 +21,28 @@
   width: 100%;
   height: 100%;
 }
-.menu_mobile_center_box{
-    display: flex;
+.menu_mobile_center_box {
+  display: flex;
   justify-content: end;
   align-items: center;
   margin-bottom: 2rem;
 }
-.menu_mobile_center_box_button{
-    background-color: transparent;
+.menu_mobile_center_box_button {
+  background-color: transparent;
   border: none;
   cursor: pointer;
 }
-.menu_mobile_center_ul{
-    display: flex;
+.menu_mobile_center_ul {
+  display: flex;
   justify-content: center;
   align-items: start;
   flex-direction: column;
   padding-left: 1rem;
 }
-.menu_mobile_center_ul_li{
+.menu_mobile_center_ul_li {
   width: 100%;
 }
-.menu_mobile_center_ul_li_a{
+.menu_mobile_center_ul_li_a {
   width: 100%;
   display: flex;
   justify-content: start;
@@ -53,7 +53,7 @@
   color: var(--black-100);
   padding: 0.5rem 0;
 }
-.menu_mobile_center_button{
+.menu_mobile_center_button {
   background-color: transparent;
   font: normal normal 700 0.8rem/1.2rem var(--font-primary);
   color: var(--black-100);
@@ -73,11 +73,11 @@
   transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition: 0.3;
 }
-.menu_mobile_center_button svg{
+.menu_mobile_center_button svg {
   transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition: 0.3;
 }
-.menu_mobile_center_button:hover{
+.menu_mobile_center_button:hover {
   color: var(--blue);
   border: 1px solid var(--blue);
 }

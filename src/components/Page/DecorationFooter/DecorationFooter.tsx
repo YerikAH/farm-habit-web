@@ -8,8 +8,8 @@ const DecorationFooter = () => {
       <div className={`${s.circle} ${s['circle--three']}`} />
       <div className={`${s.circle} ${s['circle--one']}`} />
       <div className={s.footer_box}>
-        <div className={`${s.circle} ${s['circle--two']}`}  />
-        <div className={`${s.circle} ${s['circle--zero']}`}  />
+        <div className={`${s.circle} ${s['circle--two']}`} />
+        <div className={`${s.circle} ${s['circle--zero']}`} />
         <div className={s.footer_box_logo}>
           <LogoWhite />
         </div>

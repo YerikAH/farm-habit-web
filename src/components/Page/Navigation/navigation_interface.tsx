@@ -1,16 +1,11 @@
-import {
-  IconAppWindow,
-  IconCode,
-  IconHome,
-} from '@tabler/icons-react'
-import {  PathRoutes } from '../../../enum/enum'
-
+import { IconAppWindow, IconCode, IconHome } from '@tabler/icons-react'
+import { PathRoutes } from '../../../enum/enum'
 
 export interface MenuWebPage {
-  id: number,
-  name: string,
-  active: boolean,
-  icon: JSX.Element,
+  id: number
+  name: string
+  active: boolean
+  icon: JSX.Element
   path: PathRoutes
 }
 
