@@ -1,7 +1,11 @@
-import { InterfaceProps } from './props'
 import s from './section_with_description.module.css'
 
-const SectionWithDescription = ({ title, description }: InterfaceProps) => {
+interface Props {
+  title: string
+  description: string
+}
+
+const SectionWithDescription = ({ title, description }: Props) => {
   return (
     <>
       <h2 className={s.title}>{title}</h2>

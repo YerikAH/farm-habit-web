@@ -14,7 +14,7 @@ const Navigation = () => {
         <nav className={s.header_nav}>
           <ul className={s.header_nav_ul}>
             <li>
-              <Link className={s.header_nav_ul_a} to='/'>
+              <Link className={s.header_nav_ul_a} to='/' tabIndex={1}>
                 <Logo />
               </Link>
             </li>
@@ -23,7 +23,7 @@ const Navigation = () => {
           <ul className={`${s.header_nav_ul} ${s['header_nav_ul--desktop']}`}>
             {MENU_CONTANT.map((item) => (
               <li key={item.id}>
-                <Link className={s.header_nav_ul_a} to={item.path}>{item.name}</Link>
+                <Link className={s.header_nav_ul_a} to={item.path} tabIndex={1}>{item.name}</Link>
               </li>
             ))}
           </ul>
