@@ -2,7 +2,6 @@ import ReactDOM from 'react-dom'
 import { useEffect, useState } from 'react'
 import { elementHtmlSelect } from '../../../helpers/helpers'
 import { IconX, IconChevronDown } from '@tabler/icons-react'
-import { ModalProps } from './props'
 import s from './add_habit.module.css'
 import {
   BUTTON_CANCEL,
@@ -14,6 +13,13 @@ import {
   LABEL_NAME,
   LABEL_TIME,
 } from './add_habit'
+
+export interface ModalProps {
+  modal: boolean
+  setModal(modal: boolean): void
+  title: string
+}
+
 
 const AddHabit = ({ modal, setModal, title }: ModalProps) => {
   const elementHTML = document.getElementById('add')

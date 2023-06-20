@@ -2,7 +2,13 @@ import { IconBrain, IconDotsVertical } from '@tabler/icons-react'
 import { addPMorAM } from '../../../helpers/helpers'
 import { TEXT_DURATION } from './habit_card'
 import s from './habit_card.module.css'
-import { HabitCardProps } from './props'
+
+export interface HabitCardProps {
+  title: string
+  time: string
+  duration: number
+}
+
 
 const HabitCard = ({ title, time, duration }: HabitCardProps) => {
   return (
